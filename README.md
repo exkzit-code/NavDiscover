@@ -1,104 +1,72 @@
-# 🌊 NavDiscover: Navier-Stokes Singularity Benchmark
+# NavDiscover
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15769062.svg)](https://doi.org/10.5281/zenodo.15769062)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/reproduction-passing-brightgreen)](reproduce_singularity.py)
-[![Singularity Status](https://img.shields.io/badge/singularity-detected-red)](reproduce_singularity.py)
+A small research sandbox for searching for extreme, finite-time behaviour in
+periodic incompressible fluid simulations.
 
-> **A reproducible computational benchmark for generating finite-time singularities in the 3D Incompressible Navier-Stokes equations.**
+**Correction:** the earlier singularity, critical-separation and self-similarity
+claims are unsupported. The original solvers contained pressure-projection
+errors that generated false numerical blowups. This revision withdraws those
+repository claims. See the [correction and audit evidence](docs/CORRECTION.md).
+The original scripts and manuscript package remain in [the historical archive](archive/legacy/).
 
----
+## What the corrected version does
 
-## 🚨 "The Sweet Spot" ($s \approx 1.26$)
-This repository contains the source code for the research *["A Computationally-Guided Search for a Candidate Singularity"](https://doi.org/10.5281/zenodo.15769062)*.
+- Solves unforced periodic 3D incompressible Navier-Stokes using one shared solver.
+- Checks divergence, energy balance, reality and spectral resolution during a run.
+- Searches at fixed initial kinetic energy for the largest sampled `Z(T)/Z(0)`,
+  where Z is enstrophy computed from vorticity.
+- Rejects invalid runs and checks the selected candidate on finer grids and a
+  smaller timestep.
+- Records finite outcomes without labelling thresholds or solver failures as
+  singularities.
 
-Using an AI-guided evolutionary search, we identified a critical geometric instability in **anti-parallel vortex tubes** at a normalized separation distance of **$s \approx 1.26$**.
+This is exploratory numerical software. Passing its checks is not a proof of
+regularity or singularity, and the search does not establish a global optimum.
+The historical separation value 1.26 is a baseline only.
 
-At this specific coordinate, the flow exhibits:
-1.  **Rapid Blow-up:** Peak enstrophy explodes to $\approx 10^{15}$ in finite time ($t^* \approx 0.041$).
-2.  **Inviscid Scaling:** The blow-up time is invariant across a wide range of viscosities ($\nu \to 0$).
-3.  **Self-Similarity:** The vorticity profile collapses to a universal "W-profile" attractor, persisting at high resolutions ($512^3$).
+## Run
 
-<p align="center">
-  <img src="https://github.com/culturiqai/NavDiscover/blob/main/assets/vorticity_convergence.png" alt="Resolution Convergence">
-  <br>
-  <em><b>Figure 1: Visual evidence of Singularity.</b> Vorticity structures do not smooth out; they become visibly sharper and more intense as the grid is refined from 256³ (top) to the ultra-high resolution of 512³ (bottom). This persistence at small scales is the hallmark of a true Euler singularity.</em>
-</p>
-
----
-
-## ⚡️ Quick Start (Reproduce in < 5 mins)
-
-You can reproduce the singularity on a standard workstation (16GB RAM recommended for 256³ resolution).
+Python 3.10 or newer is required. From the repository root:
 
 ```bash
-# 1. Clone the repository
-git clone [https://github.com/culturiqai/NavDiscover.git](https://github.com/culturiqai/NavDiscover.git)
-cd NavDiscover
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. 🚀 RUN THE BENCHMARK
-python reproduce_singularity.py
-
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python -m experiments.search
 ```
 
-**Output:**
-The script will generate:
+The default search uses seed 20260908, N=24, viscosity 0.005, T=0.2 and initial
+energy 0.5. It uses a deliberately small differential-evolution budget. The best
+sampled case is compared at N=24,32,48 and at two timestep limits. Its structured
+report is written to `results/search.json`. Exit code 2 means no candidate passed
+the full refinement checks; inspect the report for the reason.
 
-* `hypo_hires_..._summary.png`: Enstrophy growth curve showing the vertical asymptote.
-* `hypo_hires_..._vorticity.png`: Visualization of the core collapse slices.
+A recorded run is in [results/corrected_search_2026-09-08.json](results/corrected_search_2026-09-08.json).
+The [experiment note](docs/EXPERIMENT.md) explains its actual outcome and limits.
+To reproduce that run without overwriting the tracked result:
 
----
+```bash
+python -m experiments.search --seed 20260908 --iterations 2 --population 3 --time 0.2 --output results/search.json
+```
 
-## 📂 Repository Structure
+## Method and interpretation
 
-| File/Folder | Description |
+See [NUMERICS.md](docs/NUMERICS.md) for the equation, normalization, timestep
+controls, fixed-energy objective, initial-condition construction and rejection
+thresholds. The corrected tubes are initialized through vorticity and periodic
+Biot-Savart inversion, unlike the old axial velocity fields. This is a fresh
+experiment, not a validation of the historical result.
+
+| Path | Purpose |
 | --- | --- |
-| **`reproduce_singularity.py`** | **Start Here.** Runs the high-resolution simulation at the critical . |
-| `src/solver.py` | The core pseudo-spectral Navier-Stokes solver (3D, 2/3 dealiasing). |
-| `experiments/find_sweet_spot.py` | The evolutionary search script that discovered the  minimum. |
-| `experiments/validate_inviscid.py` | Performs the viscosity sweep () to prove Eulerian scaling. |
-| `experiments/benchmark_kida.py` | Tests generalizability on the **Kida Flow** (). |
-| `analysis/` | Scripts for plotting self-similarity and checking robustness. |
+| `src/solver.py` | Shared solver, diagnostics and field comparisons |
+| `src/initial_conditions.py` | Exact benchmark, Kida flow and periodic vortex tubes |
+| `experiments/search.py` | Seeded finite-time search with refinement checks |
+| `tests/` | Analytic benchmarks and numerical failure regression tests |
+| `docs/` | Numerical specification, correction and observed experiment result |
+| `archive/legacy/` | Unchanged historical code with known errors |
 
----
+The [2025 Zenodo manuscript](https://doi.org/10.5281/zenodo.15769062) documents the
+historical work and its now-unsupported conclusions. It is not evidence validating
+the corrected solver. The external manuscript has not been amended by this change.
 
-## 📊 Key Results
-
-### 1. The "Valley of Instability"
-
-Our parameter sweep revealed a sharp global minimum in blow-up time at separation , suggesting a geometric resonance.
-*(See `experiments/find_sweet_spot.py`)*
-
-### 2. Viscosity Independence
-
-The singularity time  remains constant as viscosity is reduced, a hallmark of an inviscid (Euler) singularity mechanism, distinguishing it from viscous reconnection.
-*(See `experiments/validate_inviscid.py`)*
-
-### 3. We are currently scrutinizing the math, to rule out Gibbs Phenomena 
-
----
-
-## 🛠 Citation
-
-If you use this benchmark to stress-test your Neural Operators, PINNs, or CFD solvers, please cite the Zenodo record:
-
-```bibtex
-@misc{tiwari2025navdiscover,
-  author = {Aditya Tiwari},
-  title = {NavDiscover: A Framework for Discovering Finite-Time Singularities in Navier-Stokes},
-  year = {2025},
-  publisher = {Zenodo},
-  doi = {10.5281/zenodo.15769062},
-  url = {[https://doi.org/10.5281/zenodo.15769062](https://doi.org/10.5281/zenodo.15769062)}
-}
-
-```
-
----
-
-> *This project is part of an open research initiative to map the stability landscape of the Navier-Stokes equations.*
-
-
+MIT license. See [LICENSE.md](LICENSE.md).

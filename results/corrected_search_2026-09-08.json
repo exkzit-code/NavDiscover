@@ -1,0 +1,3339 @@
+{
+  "purpose": "Finite-time enstrophy ratio search; no singularity inference",
+  "parameter_order": [
+    "separation",
+    "center_wavenumber",
+    "filter_width",
+    "filter_amplitude"
+  ],
+  "bounds": [
+    [
+      0.9,
+      1.4
+    ],
+    [
+      2.0,
+      4.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      1.0,
+      1.5
+    ]
+  ],
+  "baseline_parameters": [
+    1.26,
+    3.0,
+    1.5,
+    1.0
+  ],
+  "settings": {
+    "n": 24,
+    "nu": 0.005,
+    "final_time": 0.2,
+    "dt_max": 0.005,
+    "seed": 20260908,
+    "iterations": 2,
+    "population_multiplier": 3,
+    "initial_energy": 0.5,
+    "tube_radius": 0.65,
+    "perturbation": 0.05,
+    "energy_budget_tolerance": 1e-05,
+    "spectral_tail_tolerance": 0.001,
+    "spatial_field_tolerance": 0.01,
+    "temporal_field_tolerance": 0.002
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "optimizer": {
+    "success": false,
+    "message": "Maximum number of iterations has been exceeded.",
+    "evaluations": 36,
+    "global_optimum_established": false
+  },
+  "evaluations": [
+    {
+      "parameters": [
+        1.26,
+        3.0,
+        1.5,
+        1.0
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.49771512820490377,
+        "initial_enstrophy": 1.1467545393455845,
+        "final_enstrophy": 1.1381454180777988,
+        "enstrophy_ratio": 0.992492620720125,
+        "max_energy_budget_error": 1.3244960683778118e-12,
+        "max_relative_divergence": 9.412506158726493e-18,
+        "max_reality_error": 1.0299506479522777e-16,
+        "max_spectral_tail_fraction": 1.7785614049461586e-06
+      },
+      "objective": -0.992492620720125
+    },
+    {
+      "parameters": [
+        1.0036102604248407,
+        2.9075858865460997,
+        1.8039900214372182,
+        1.088379839649428
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.4975308940204373,
+        "initial_enstrophy": 1.2396540297211323,
+        "final_enstrophy": 1.229496725720013,
+        "enstrophy_ratio": 0.9918063397064064,
+        "max_energy_budget_error": 1.8425261316679094e-12,
+        "max_relative_divergence": 7.65221275610381e-18,
+        "max_reality_error": 1.0265447307360315e-16,
+        "max_spectral_tail_fraction": 2.2668159939785115e-06
+      },
+      "objective": -0.9918063397064064
+    },
+    {
+      "parameters": [
+        1.3514649959692004,
+        2.206812535827443,
+        1.3382786062764742,
+        1.4353743880615817
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.4976574400302453,
+        "initial_enstrophy": 1.175663429584625,
+        "final_enstrophy": 1.1669250618478728,
+        "enstrophy_ratio": 0.9925672879526076,
+        "max_energy_budget_error": 1.0713652187632759e-12,
+        "max_relative_divergence": 9.29124057694838e-18,
+        "max_reality_error": 1.063488238602494e-16,
+        "max_spectral_tail_fraction": 1.2803139587036123e-06
+      },
+      "objective": -0.9925672879526076
+    },
+    {
+      "parameters": [
+        1.1777120218421404,
+        3.041795303225768,
+        1.991134037220624,
+        1.3527470015473786
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.49753815781211425,
+        "initial_enstrophy": 1.2359135784446786,
+        "final_enstrophy": 1.2259654756316898,
+        "enstrophy_ratio": 0.9919508103264729,
+        "max_energy_budget_error": 1.6715517858756353e-12,
+        "max_relative_divergence": 1.2834719560327067e-17,
+        "max_reality_error": 1.0600598616046573e-16,
+        "max_spectral_tail_fraction": 2.2597750910719943e-06
+      },
+      "objective": -0.9919508103264729
+    },
+    {
+      "parameters": [
+        1.2948446474381292,
+        3.8590678947252823,
+        1.6645345420333126,
+        1.1805498609980085
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4976338987934876,
+        "initial_enstrophy": 1.1876820750558803,
+        "final_enstrophy": 1.178448717754515,
+        "enstrophy_ratio": 0.9922257332199522,
+        "max_energy_budget_error": 1.5294432387236157e-12,
+        "max_relative_divergence": 7.795843473367394e-18,
+        "max_reality_error": 1.0518764237316398e-16,
+        "max_spectral_tail_fraction": 2.225390075554469e-06
+      },
+      "objective": -0.9922257332199522
+    },
+    {
+      "parameters": [
+        1.1965745446593734,
+        2.6114321093168074,
+        1.7011396231135707,
+        1.4950533147007468
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.4975256720595145,
+        "initial_enstrophy": 1.2421436082750712,
+        "final_enstrophy": 1.2322213019406003,
+        "enstrophy_ratio": 0.9920119491270017,
+        "max_energy_budget_error": 1.5196732761069139e-12,
+        "max_relative_divergence": 7.44244876495712e-18,
+        "max_reality_error": 1.0342543248772356e-16,
+        "max_spectral_tail_fraction": 1.9395591881849075e-06
+      },
+      "objective": -0.9920119491270017
+    },
+    {
+      "parameters": [
+        1.1277089962464752,
+        3.414053477064501,
+        1.057300553799075,
+        1.3060970068844413
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4974049503618129,
+        "initial_enstrophy": 1.3031592620595975,
+        "final_enstrophy": 1.291933428001273,
+        "enstrophy_ratio": 0.9913856775720702,
+        "max_energy_budget_error": 2.1795898419441073e-12,
+        "max_relative_divergence": 1.4408198522373098e-17,
+        "max_reality_error": 1.0111305789098595e-16,
+        "max_spectral_tail_fraction": 3.1036337515778628e-06
+      },
+      "objective": -0.9913856775720702
+    },
+    {
+      "parameters": [
+        1.09777888817967,
+        3.668027479907747,
+        1.5564968121347487,
+        1.2190799106983885
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4974813044492076,
+        "initial_enstrophy": 1.2646469882793008,
+        "final_enstrophy": 1.254090497539785,
+        "enstrophy_ratio": 0.9916526186063361,
+        "max_energy_budget_error": 2.006839139312433e-12,
+        "max_relative_divergence": 1.2667928266811512e-17,
+        "max_reality_error": 1.046718153333198e-16,
+        "max_spectral_tail_fraction": 2.78243987896866e-06
+      },
+      "objective": -0.9916526186063361
+    },
+    {
+      "parameters": [
+        0.957207620276433,
+        2.706858381925204,
+        1.4810886213224839,
+        1.0057803126961655
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.4975467923490096,
+        "initial_enstrophy": 1.2316696147199557,
+        "final_enstrophy": 1.2215846760917932,
+        "enstrophy_ratio": 0.9918119774104718,
+        "max_energy_budget_error": 1.8700596626786133e-12,
+        "max_relative_divergence": 1.2835961949688293e-17,
+        "max_reality_error": 1.073884872733095e-16,
+        "max_spectral_tail_fraction": 2.2308654222529675e-06
+      },
+      "objective": -0.9918119774104718
+    },
+    {
+      "parameters": [
+        1.3641515188753754,
+        2.0356161271196083,
+        1.2326860732417333,
+        1.1397813631443678
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4977436082954569,
+        "initial_enstrophy": 1.1323210147082854,
+        "final_enstrophy": 1.124095871237101,
+        "enstrophy_ratio": 0.9927360321283948,
+        "max_energy_budget_error": 1.0764722446765518e-12,
+        "max_relative_divergence": 9.473069565913326e-18,
+        "max_reality_error": 1.0548368211189808e-16,
+        "max_spectral_tail_fraction": 1.3732203264792475e-06
+      },
+      "objective": -0.9927360321283948
+    },
+    {
+      "parameters": [
+        1.0568510042566759,
+        3.258989556156236,
+        1.901689646564274,
+        1.3827650603661659
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999994,
+        "final_energy": 0.497426090606837,
+        "initial_enstrophy": 1.2924435328097337,
+        "final_enstrophy": 1.2815122699336188,
+        "enstrophy_ratio": 0.9915421737208505,
+        "max_energy_budget_error": 2.043365476822601e-12,
+        "max_relative_divergence": 1.0230940171075757e-17,
+        "max_reality_error": 1.12699847471285e-16,
+        "max_spectral_tail_fraction": 2.7345199785012212e-06
+      },
+      "objective": -0.9915421737208505
+    },
+    {
+      "parameters": [
+        1.2629486623383246,
+        2.468594589646777,
+        1.127499525236004,
+        1.2659952536042365
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4975684496114214,
+        "initial_enstrophy": 1.2205503628914889,
+        "final_enstrophy": 1.211033446231248,
+        "enstrophy_ratio": 0.992202766104878,
+        "max_energy_budget_error": 1.3575807145116414e-12,
+        "max_relative_divergence": 9.122864671726529e-18,
+        "max_reality_error": 1.0714944295751416e-16,
+        "max_spectral_tail_fraction": 1.7680203140879248e-06
+      },
+      "objective": -0.992202766104878
+    },
+    {
+      "parameters": [
+        0.9249682561049748,
+        3.6580875240808606,
+        1.2926006952756428,
+        1.0551252572727845
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999994,
+        "final_energy": 0.49749041766282515,
+        "initial_enstrophy": 1.2601070456213606,
+        "final_enstrophy": 1.249526475395107,
+        "enstrophy_ratio": 0.9916034353882719,
+        "max_energy_budget_error": 2.0600188221919784e-12,
+        "max_relative_divergence": 7.629938581578897e-18,
+        "max_reality_error": 1.0951858332357499e-16,
+        "max_spectral_tail_fraction": 2.4716662715829875e-06
+      },
+      "objective": -0.9916034353882719
+    },
+    {
+      "parameters": [
+        1.055170094813455,
+        2.0356161271196083,
+        1.2326860732417333,
+        1.387452429908289
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4975324032506742,
+        "initial_enstrophy": 1.238714231223299,
+        "final_enstrophy": 1.2289255635597485,
+        "enstrophy_ratio": 0.9920977192181899,
+        "max_energy_budget_error": 1.3928858066947214e-12,
+        "max_relative_divergence": 5.8522072279508e-18,
+        "max_reality_error": 1.0199739761692824e-16,
+        "max_spectral_tail_fraction": 1.5436374558134667e-06
+      },
+      "objective": -0.9920977192181899
+    },
+    {
+      "parameters": [
+        1.238451510332855,
+        3.7360288745882104,
+        1.3121349131607905,
+        1.1131178694107295
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999994,
+        "final_energy": 0.4976299253602813,
+        "initial_enstrophy": 1.1897081836484564,
+        "final_enstrophy": 1.180397808753491,
+        "enstrophy_ratio": 0.9921742364867883,
+        "max_energy_budget_error": 1.568856156097809e-12,
+        "max_relative_divergence": 1.9948970023234745e-17,
+        "max_reality_error": 1.0388231253149244e-16,
+        "max_spectral_tail_fraction": 2.2028871267562744e-06
+      },
+      "objective": -0.9921742364867883
+    },
+    {
+      "parameters": [
+        1.1777120218421404,
+        2.0267869769236286,
+        1.6206486292032256,
+        1.1876026307006167
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.49764623335593794,
+        "initial_enstrophy": 1.1814343696744452,
+        "final_enstrophy": 1.1723654930408447,
+        "enstrophy_ratio": 0.9923238422155439,
+        "max_energy_budget_error": 1.3584688929313415e-12,
+        "max_relative_divergence": 7.216736385443982e-18,
+        "max_reality_error": 9.851017840800999e-17,
+        "max_spectral_tail_fraction": 1.6748616478106183e-06
+      },
+      "objective": -0.9923238422155439
+    },
+    {
+      "parameters": [
+        1.2948446474381292,
+        3.1627985033431214,
+        1.1058353010360082,
+        1.0343544230546806
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4977081292672035,
+        "initial_enstrophy": 1.1502703065384299,
+        "final_enstrophy": 1.1416278686354122,
+        "enstrophy_ratio": 0.9924866026238426,
+        "max_energy_budget_error": 1.3136158827364852e-12,
+        "max_relative_divergence": 7.675875303682929e-18,
+        "max_reality_error": 1.0238004558853578e-16,
+        "max_spectral_tail_fraction": 1.7839671639539732e-06
+      },
+      "objective": -0.9924866026238426
+    },
+    {
+      "parameters": [
+        1.313858582967416,
+        2.8847691655681507,
+        1.0262186713980692,
+        1.1941089687876145
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4975929628769621,
+        "initial_enstrophy": 1.2082537924406567,
+        "final_enstrophy": 1.1988139324786045,
+        "enstrophy_ratio": 0.9921871878068068,
+        "max_energy_budget_error": 1.4270806758531762e-12,
+        "max_relative_divergence": 9.174945483768938e-18,
+        "max_reality_error": 1.0297070419062185e-16,
+        "max_spectral_tail_fraction": 1.970020750661655e-06
+      },
+      "objective": -0.9921871878068068
+    },
+    {
+      "parameters": [
+        1.1277089962464752,
+        2.475555824103452,
+        1.3985801421764057,
+        1.1582310241087945
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4975697322655941,
+        "initial_enstrophy": 1.2200009403055487,
+        "final_enstrophy": 1.2103045210200059,
+        "enstrophy_ratio": 0.9920521214654847,
+        "max_energy_budget_error": 1.567412866165796e-12,
+        "max_relative_divergence": 6.7998431256003144e-18,
+        "max_reality_error": 1.0812293367547106e-16,
+        "max_spectral_tail_fraction": 1.9836246757905394e-06
+      },
+      "objective": -0.9920521214654847
+    },
+    {
+      "parameters": [
+        1.181085596859851,
+        2.737683218261229,
+        1.5564968121347487,
+        1.2435019611240816
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999983,
+        "final_energy": 0.49755709127379255,
+        "initial_enstrophy": 1.2263555754545763,
+        "final_enstrophy": 1.2165893111604875,
+        "enstrophy_ratio": 0.9920363518627388,
+        "max_energy_budget_error": 1.5686341114928843e-12,
+        "max_relative_divergence": 7.680656323490023e-18,
+        "max_reality_error": 1.0315838030348662e-16,
+        "max_spectral_tail_fraction": 2.05662081345454e-06
+      },
+      "objective": -0.9920363518627388
+    },
+    {
+      "parameters": [
+        1.1907967345713664,
+        2.706858381925204,
+        1.9786612724020187,
+        1.2336950965159166
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.49760407595785594,
+        "initial_enstrophy": 1.2026932417056755,
+        "final_enstrophy": 1.1932649068180696,
+        "enstrophy_ratio": 0.9921606486503287,
+        "max_energy_budget_error": 1.5061285552064874e-12,
+        "max_relative_divergence": 7.967561088015015e-18,
+        "max_reality_error": 1.0188892185058733e-16,
+        "max_spectral_tail_fraction": 1.967601796584113e-06
+      },
+      "objective": -0.9921606486503287
+    },
+    {
+      "parameters": [
+        1.2432195491789144,
+        3.660200216752302,
+        1.7606875523082228,
+        1.1340021185283562
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4976297951380255,
+        "initial_enstrophy": 1.1897555776280277,
+        "final_enstrophy": 1.180480602144002,
+        "enstrophy_ratio": 0.9922043017419452,
+        "max_energy_budget_error": 1.5354384430565915e-12,
+        "max_relative_divergence": 8.709253233871659e-18,
+        "max_reality_error": 1.0581776408066765e-16,
+        "max_spectral_tail_fraction": 2.151242914048842e-06
+      },
+      "objective": -0.9922043017419452
+    },
+    {
+      "parameters": [
+        1.1270247184961475,
+        2.366972065787091,
+        1.901689646564274,
+        1.3827650603661659
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.49756548423977354,
+        "initial_enstrophy": 1.2221228022788686,
+        "final_enstrophy": 1.2124309878607955,
+        "enstrophy_ratio": 0.9920696885779392,
+        "max_energy_budget_error": 1.5125678487493129e-12,
+        "max_relative_divergence": 1.0531466387973672e-17,
+        "max_reality_error": 1.0971368463009348e-16,
+        "max_spectral_tail_fraction": 1.842582852497115e-06
+      },
+      "objective": -0.9920696885779392
+    },
+    {
+      "parameters": [
+        1.056860271813414,
+        2.364899727723309,
+        1.85425817954176,
+        1.016081133346552
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4975982417774022,
+        "initial_enstrophy": 1.2057077193200378,
+        "final_enstrophy": 1.196089865869326,
+        "enstrophy_ratio": 0.9920230638847234,
+        "max_energy_budget_error": 1.6835421945415874e-12,
+        "max_relative_divergence": 1.588885906701652e-17,
+        "max_reality_error": 1.0288015444951631e-16,
+        "max_spectral_tail_fraction": 2.107860359223622e-06
+      },
+      "objective": -0.9920230638847234
+    },
+    {
+      "parameters": [
+        0.9249682561049748,
+        3.5854423589040474,
+        1.1791233284185978,
+        1.3859535221331971
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.4972301092539643,
+        "initial_enstrophy": 1.3914097801857304,
+        "final_enstrophy": 1.3785438961852214,
+        "enstrophy_ratio": 0.9907533465814855,
+        "max_energy_budget_error": 2.8868019086303312e-12,
+        "max_relative_divergence": 1.1524836448603867e-17,
+        "max_reality_error": 1.077993897112371e-16,
+        "max_spectral_tail_fraction": 3.911171536207151e-06
+      },
+      "objective": -0.9907533465814855
+    },
+    {
+      "parameters": [
+        0.9570513755239443,
+        2.9493637462028306,
+        1.6481204344253553,
+        1.0165166060458237
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4975401674971169,
+        "initial_enstrophy": 1.2350072183477259,
+        "final_enstrophy": 1.224872235180284,
+        "enstrophy_ratio": 0.9917935838618004,
+        "max_energy_budget_error": 1.8829382497642655e-12,
+        "max_relative_divergence": 1.1737792775835454e-17,
+        "max_reality_error": 1.0983078007708522e-16,
+        "max_spectral_tail_fraction": 2.2492337562374535e-06
+      },
+      "objective": -0.9917935838618004
+    },
+    {
+      "parameters": [
+        1.3141742522056274,
+        2.049693839539028,
+        1.0684458359437754,
+        1.2278572480583072
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999983,
+        "final_energy": 0.49768242485206615,
+        "initial_enstrophy": 1.1631022463512457,
+        "final_enstrophy": 1.1545014490944165,
+        "enstrophy_ratio": 0.9926052956360366,
+        "max_energy_budget_error": 1.1047829318044937e-12,
+        "max_relative_divergence": 7.62786031432514e-18,
+        "max_reality_error": 1.0889569448235982e-16,
+        "max_spectral_tail_fraction": 1.3787616962082481e-06
+      },
+      "objective": -0.9926052956360366
+    },
+    {
+      "parameters": [
+        1.1777120218421404,
+        2.0267869769236286,
+        1.151221108405668,
+        1.0819598357493447
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999994,
+        "final_energy": 0.4976488099202878,
+        "initial_enstrophy": 1.180146977086193,
+        "final_enstrophy": 1.1710761782462287,
+        "enstrophy_ratio": 0.9923138397029493,
+        "max_energy_budget_error": 1.4009904347744852e-12,
+        "max_relative_divergence": 7.58189896984931e-18,
+        "max_reality_error": 1.0221840769021982e-16,
+        "max_spectral_tail_fraction": 1.7903137771000093e-06
+      },
+      "objective": -0.9923138397029493
+    },
+    {
+      "parameters": [
+        1.2948446474381292,
+        2.9940807019339437,
+        1.1058353010360082,
+        1.0336130628181799
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000002,
+        "final_energy": 0.49770826355951525,
+        "initial_enstrophy": 1.150199050987456,
+        "final_enstrophy": 1.1415648512500653,
+        "enstrophy_ratio": 0.9924932995467366,
+        "max_energy_budget_error": 1.3042900093296333e-12,
+        "max_relative_divergence": 9.39804511093137e-18,
+        "max_reality_error": 9.999807987828179e-17,
+        "max_spectral_tail_fraction": 1.7675468755199456e-06
+      },
+      "objective": -0.9924932995467366
+    },
+    {
+      "parameters": [
+        1.0476768223834796,
+        2.8847691655681507,
+        1.4449501593512544,
+        1.2913016255992635
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999994,
+        "final_energy": 0.4974262966154587,
+        "initial_enstrophy": 1.292310781315787,
+        "final_enstrophy": 1.2814396073154348,
+        "enstrophy_ratio": 0.9915878021312462,
+        "max_energy_budget_error": 1.9261259254221845e-12,
+        "max_relative_divergence": 8.862275209919538e-18,
+        "max_reality_error": 1.0947178552374936e-16,
+        "max_spectral_tail_fraction": 2.4628290692521887e-06
+      },
+      "objective": -0.9915878021312462
+    },
+    {
+      "parameters": [
+        1.2031691374015823,
+        2.475555824103452,
+        1.512320485723392,
+        1.4780214135972756
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4975280315606544,
+        "initial_enstrophy": 1.2409266306480964,
+        "final_enstrophy": 1.231078632072017,
+        "enstrophy_ratio": 0.9920639961035117,
+        "max_energy_budget_error": 1.439959262938828e-12,
+        "max_relative_divergence": 7.390604670089292e-18,
+        "max_reality_error": 1.0046372488258421e-16,
+        "max_spectral_tail_fraction": 1.793115447715187e-06
+      },
+      "objective": -0.9920639961035117
+    },
+    {
+      "parameters": [
+        1.181085596859851,
+        2.5755279131292315,
+        1.8327090890963613,
+        1.2153206057240078
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999983,
+        "final_energy": 0.4976037668285803,
+        "initial_enstrophy": 1.202846062441912,
+        "final_enstrophy": 1.193421592347923,
+        "enstrophy_ratio": 0.9921648576752571,
+        "max_energy_budget_error": 1.4931389458183734e-12,
+        "max_relative_divergence": 9.185677772015103e-18,
+        "max_reality_error": 1.0533957712010875e-16,
+        "max_spectral_tail_fraction": 1.924553621287246e-06
+      },
+      "objective": -0.9921648576752571
+    },
+    {
+      "parameters": [
+        1.214189443178721,
+        2.0285144254357066,
+        1.5447426444638368,
+        1.178246262799733
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.49766518379655805,
+        "initial_enstrophy": 1.1718747842356558,
+        "final_enstrophy": 1.1629728462114346,
+        "enstrophy_ratio": 0.9924036781540381,
+        "max_energy_budget_error": 1.3009593402557584e-12,
+        "max_relative_divergence": 1.0743953279691454e-17,
+        "max_reality_error": 1.0326815208444333e-16,
+        "max_spectral_tail_fraction": 1.6207077895668048e-06
+      },
+      "objective": -0.9924036781540381
+    },
+    {
+      "parameters": [
+        1.2432195491789144,
+        2.9923813636319205,
+        1.7606875523082228,
+        1.2142924824022203
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.4976078634444635,
+        "initial_enstrophy": 1.2007761343584737,
+        "final_enstrophy": 1.1913926435973436,
+        "enstrophy_ratio": 0.992185478631166,
+        "max_energy_budget_error": 1.4934720127257602e-12,
+        "max_relative_divergence": 7.570751556792509e-18,
+        "max_reality_error": 1.0944334030045285e-16,
+        "max_spectral_tail_fraction": 2.0308721854554468e-06
+      },
+      "objective": -0.992185478631166
+    },
+    {
+      "parameters": [
+        1.3325144316576691,
+        2.366972065787091,
+        1.1844939185333139,
+        1.3827650603661659
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5000000000000001,
+        "final_energy": 0.4975944792107392,
+        "initial_enstrophy": 1.207381768557957,
+        "final_enstrophy": 1.1981699444546006,
+        "enstrophy_ratio": 0.992370413117668,
+        "max_energy_budget_error": 1.1899370377932426e-12,
+        "max_relative_divergence": 1.1838998901558654e-17,
+        "max_reality_error": 1.1130848058065498e-16,
+        "max_spectral_tail_fraction": 1.4988030471999744e-06
+      },
+      "objective": -0.992370413117668
+    },
+    {
+      "parameters": [
+        1.2629486623383246,
+        2.0342266588542857,
+        1.2937408347619714,
+        1.1473071308798812
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.497687619975039,
+        "initial_enstrophy": 1.1605518887626376,
+        "final_enstrophy": 1.1518574701134,
+        "enstrophy_ratio": 0.9925083757706796,
+        "max_energy_budget_error": 1.2279066652354231e-12,
+        "max_relative_divergence": 7.188274038514403e-18,
+        "max_reality_error": 1.023744745513988e-16,
+        "max_spectral_tail_fraction": 1.5579809060101188e-06
+      },
+      "objective": -0.9925083757706796
+    },
+    {
+      "parameters": [
+        1.214126057071528,
+        2.1966919198703687,
+        1.8221706466232872,
+        1.0850749193635778
+      ],
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.49999999999999983,
+        "final_energy": 0.49767368948677115,
+        "initial_enstrophy": 1.1676247681912322,
+        "final_enstrophy": 1.1587166785248946,
+        "enstrophy_ratio": 0.9923707599316027,
+        "max_energy_budget_error": 1.3776757512573572e-12,
+        "max_relative_divergence": 9.327250211081849e-18,
+        "max_reality_error": 1.0550399784437668e-16,
+        "max_spectral_tail_fraction": 1.7883556453589343e-06
+      },
+      "objective": -0.9923707599316027
+    }
+  ],
+  "source_files_sha256": {
+    "src/solver.py": "7257eb48049efff8e8c5620cce61c250cc5c9f015ec1ffbf5e284cbfba2d13c5",
+    "src/initial_conditions.py": "6edc73f5575c3a9483c8f7b58ccf9c1da4746dda8cefc45f3f37009837bbff9e",
+    "experiments/search.py": "77aa1bc21e5fc25e2437c459ef9f6fe668fa6bb2a31ccc67503c74202cadcd9f"
+  },
+  "source_parent_commit": "bff8d412d373338b655f4d31e0e3217eb0feb812",
+  "source_worktree_modified": true,
+  "status": "refinement_passed",
+  "best_sampled": {
+    "parameters": [
+      1.3641515188753754,
+      2.0356161271196083,
+      1.2326860732417333,
+      1.1397813631443678
+    ],
+    "summary": {
+      "status": "completed",
+      "reason": null,
+      "final_time": 0.2,
+      "steps": 40,
+      "max_actual_dt": 0.0050000000000000044,
+      "initial_energy": 0.5,
+      "final_energy": 0.4977436082954569,
+      "initial_enstrophy": 1.1323210147082854,
+      "final_enstrophy": 1.124095871237101,
+      "enstrophy_ratio": 0.9927360321283948,
+      "max_energy_budget_error": 1.0764722446765518e-12,
+      "max_relative_divergence": 9.473069565913326e-18,
+      "max_reality_error": 1.0548368211189808e-16,
+      "max_spectral_tail_fraction": 1.3732203264792475e-06
+    },
+    "objective": -0.9927360321283948
+  },
+  "refinement": [
+    {
+      "n": 24,
+      "dt_max": 0.005,
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4977436082954569,
+        "initial_enstrophy": 1.1323210147082854,
+        "final_enstrophy": 1.124095871237101,
+        "enstrophy_ratio": 0.9927360321283948,
+        "max_energy_budget_error": 1.0764722446765518e-12,
+        "max_relative_divergence": 9.473069565913326e-18,
+        "max_reality_error": 1.0548368211189808e-16,
+        "max_spectral_tail_fraction": 1.3732203264792475e-06
+      },
+      "history": [
+        {
+          "energy": 0.5,
+          "enstrophy": 1.1323210147082854,
+          "relative_divergence": 9.473069565913326e-18,
+          "reality_error": 9.298168133302734e-17,
+          "spectral_tail_fraction": 2.6139906828276072e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0,
+          "energy_budget_error": 0.0
+        },
+        {
+          "energy": 0.499943389140824,
+          "enstrophy": 1.1321133730137236,
+          "relative_divergence": 3.867842369397489e-18,
+          "reality_error": 8.73907198299634e-17,
+          "spectral_tail_fraction": 2.640493528310342e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.005,
+          "energy_budget_error": 5.329070518200751e-15
+        },
+        {
+          "energy": 0.4998867886606976,
+          "enstrophy": 1.131905852498222,
+          "relative_divergence": 2.9400047207342116e-19,
+          "reality_error": 9.128165049307631e-17,
+          "spectral_tail_fraction": 2.7295247067922212e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.01,
+          "energy_budget_error": 1.176836406102666e-14
+        },
+        {
+          "energy": 0.4998301985535987,
+          "enstrophy": 1.1316984516968405,
+          "relative_divergence": 5.474437533371424e-18,
+          "reality_error": 7.506411685278796e-17,
+          "spectral_tail_fraction": 2.8822483079233017e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.015,
+          "energy_budget_error": 1.9539925233402755e-14
+        },
+        {
+          "energy": 0.499773618813578,
+          "enstrophy": 1.1314911691510012,
+          "relative_divergence": 4.975256167399691e-19,
+          "reality_error": 7.450296138555065e-17,
+          "spectral_tail_fraction": 3.1007919271917646e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.02,
+          "energy_budget_error": 2.842170943040401e-14
+        },
+        {
+          "energy": 0.4997170494347589,
+          "enstrophy": 1.1312840034082967,
+          "relative_divergence": 2.475596011761643e-19,
+          "reality_error": 8.114822853447408e-17,
+          "spectral_tail_fraction": 3.388234424689731e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.025,
+          "energy_budget_error": 3.8191672047105385e-14
+        },
+        {
+          "energy": 0.49966049041133775,
+          "enstrophy": 1.131076953022301,
+          "relative_divergence": 7.689738969750549e-19,
+          "reality_error": 9.486266545436722e-17,
+          "spectral_tail_fraction": 3.7485916978453704e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.030000000000000002,
+          "energy_budget_error": 4.929390229335695e-14
+        },
+        {
+          "energy": 0.49960394173758244,
+          "enstrophy": 1.130870016552388,
+          "relative_divergence": 7.663246265319088e-19,
+          "reality_error": 7.833217621815884e-17,
+          "spectral_tail_fraction": 4.186800506402639e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.035,
+          "energy_budget_error": 6.150635556423367e-14
+        },
+        {
+          "energy": 0.4995474034078334,
+          "enstrophy": 1.1306631925635524,
+          "relative_divergence": 7.134048952164367e-19,
+          "reality_error": 9.410262118233878e-17,
+          "spectral_tail_fraction": 4.70870039210047e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.04,
+          "energy_budget_error": 7.505107646466058e-14
+        },
+        {
+          "energy": 0.49949087541650194,
+          "enstrophy": 1.1304564796262424,
+          "relative_divergence": 5.5547602712948376e-18,
+          "reality_error": 8.104407029992232e-17,
+          "spectral_tail_fraction": 5.321013739563521e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.045,
+          "energy_budget_error": 8.948397578478762e-14
+        },
+        {
+          "energy": 0.4994343577580715,
+          "enstrophy": 1.130249876316191,
+          "relative_divergence": 1.5208925702595488e-19,
+          "reality_error": 9.175522559125128e-17,
+          "spectral_tail_fraction": 6.031324028858484e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.049999999999999996,
+          "energy_budget_error": 1.0547118733938987e-13
+        },
+        {
+          "energy": 0.4993778504270959,
+          "enstrophy": 1.130043381214258,
+          "relative_divergence": 9.686931986022033e-19,
+          "reality_error": 8.686809276242257e-17,
+          "spectral_tail_fraction": 6.84805233398516e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05499999999999999,
+          "energy_budget_error": 1.2256862191861728e-13
+        },
+        {
+          "energy": 0.4993213534182003,
+          "enstrophy": 1.129836992906279,
+          "relative_divergence": 6.905637207770072e-19,
+          "reality_error": 9.059162180298852e-17,
+          "spectral_tail_fraction": 7.780432125252534e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05999999999999999,
+          "energy_budget_error": 1.4055423491754482e-13
+        },
+        {
+          "energy": 0.49926486672608017,
+          "enstrophy": 1.1296307099829208,
+          "relative_divergence": 1.0916527111726455e-18,
+          "reality_error": 9.319568959829207e-17,
+          "spectral_tail_fraction": 8.838482437028854e-08,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06499999999999999,
+          "energy_budget_error": 1.5987211554602254e-13
+        },
+        {
+          "energy": 0.49920839034550135,
+          "enstrophy": 1.1294245310395383,
+          "relative_divergence": 2.0557496995371778e-18,
+          "reality_error": 8.217783216246936e-17,
+          "spectral_tail_fraction": 1.0032979465744026e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06999999999999999,
+          "energy_budget_error": 1.800781745942004e-13
+        },
+        {
+          "energy": 0.4991519242713,
+          "enstrophy": 1.1292184546760486,
+          "relative_divergence": 4.513326094518571e-18,
+          "reality_error": 8.682862007477409e-17,
+          "spectral_tail_fraction": 1.1375426666255383e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.075,
+          "energy_budget_error": 2.0161650127192843e-13
+        },
+        {
+          "energy": 0.4990954684983817,
+          "enstrophy": 1.1290124794968048,
+          "relative_divergence": 5.669388365866015e-18,
+          "reality_error": 7.70670517383788e-17,
+          "spectral_tail_fraction": 1.2878023417756978e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08,
+          "energy_budget_error": 2.2382096176443156e-13
+        },
+        {
+          "energy": 0.4990390230217227,
+          "enstrophy": 1.1288066041104803,
+          "relative_divergence": 4.5407913669196545e-18,
+          "reality_error": 8.445945391691307e-17,
+          "spectral_tail_fraction": 1.4553632333311264e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.085,
+          "energy_budget_error": 2.4780177909633494e-13
+        },
+        {
+          "energy": 0.49898258783636745,
+          "enstrophy": 1.1286008271299581,
+          "relative_divergence": 4.791810577247652e-18,
+          "reality_error": 9.085580270634092e-17,
+          "spectral_tail_fraction": 1.6415745289804387e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09000000000000001,
+          "energy_budget_error": 2.724487302430134e-13
+        },
+        {
+          "energy": 0.4989261629374305,
+          "enstrophy": 1.1283951471722344,
+          "relative_divergence": 4.5408496761432665e-18,
+          "reality_error": 8.000162916158355e-17,
+          "spectral_tail_fraction": 1.8478448257665476e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09500000000000001,
+          "energy_budget_error": 2.984279490192421e-13
+        },
+        {
+          "energy": 0.4988697483200949,
+          "enstrophy": 1.1281895628583214,
+          "relative_divergence": 4.544137752969542e-18,
+          "reality_error": 7.938536517915051e-17,
+          "spectral_tail_fraction": 2.0756385012041508e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10000000000000002,
+          "energy_budget_error": 3.2507330161024584e-13
+        },
+        {
+          "energy": 0.49881334397961324,
+          "enstrophy": 1.1279840728131654,
+          "relative_divergence": 3.8733298831210625e-18,
+          "reality_error": 8.928669383719452e-17,
+          "spectral_tail_fraction": 2.3264719809275933e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10500000000000002,
+          "energy_budget_error": 3.530509218307998e-13
+        },
+        {
+          "energy": 0.49875694991130626,
+          "enstrophy": 1.1277786756655692,
+          "relative_divergence": 3.882921803483878e-18,
+          "reality_error": 1.0548368211189808e-16,
+          "spectral_tail_fraction": 2.6019099114497334e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11000000000000003,
+          "energy_budget_error": 3.821387650759789e-13
+        },
+        {
+          "energy": 0.49870056611056324,
+          "enstrophy": 1.1275733700481232,
+          "relative_divergence": 4.108601998173451e-18,
+          "reality_error": 8.867743557201681e-17,
+          "spectral_tail_fraction": 2.903561246787794e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11500000000000003,
+          "energy_budget_error": 4.1233683134578314e-13
+        },
+        {
+          "energy": 0.49864419257284176,
+          "enstrophy": 1.1273681545971477,
+          "relative_divergence": 4.543493208697862e-18,
+          "reality_error": 8.840089363182735e-17,
+          "spectral_tail_fraction": 3.2330752578668156e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12000000000000004,
+          "energy_budget_error": 4.434230760352875e-13
+        },
+        {
+          "energy": 0.4985878292936676,
+          "enstrophy": 1.1271630279526386,
+          "relative_divergence": 4.111368635576804e-18,
+          "reality_error": 1.0257754300415725e-16,
+          "spectral_tail_fraction": 3.59213747374461e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12500000000000003,
+          "energy_budget_error": 4.758415883543421e-13
+        },
+        {
+          "energy": 0.49853147626863414,
+          "enstrophy": 1.1269579887582266,
+          "relative_divergence": 4.443911228821524e-18,
+          "reality_error": 9.222338415095929e-17,
+          "spectral_tail_fraction": 3.9824655638139893e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13000000000000003,
+          "energy_budget_error": 5.091482790930968e-13
+        },
+        {
+          "energy": 0.4984751334934029,
+          "enstrophy": 1.1267530356611404,
+          "relative_divergence": 4.113786336547006e-18,
+          "reality_error": 8.894240852866612e-17,
+          "spectral_tail_fraction": 4.405805170227864e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13500000000000004,
+          "energy_budget_error": 5.433431482515516e-13
+        },
+        {
+          "energy": 0.4984188009637025,
+          "enstrophy": 1.1265481673121829,
+          "relative_divergence": 5.974194413859467e-18,
+          "reality_error": 7.68828874758729e-17,
+          "spectral_tail_fraction": 4.863925699860718e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14000000000000004,
+          "energy_budget_error": 5.782041512247815e-13
+        },
+        {
+          "energy": 0.49836247867532973,
+          "enstrophy": 1.1263433823657112,
+          "relative_divergence": 6.2805011433581386e-18,
+          "reality_error": 9.02976817679458e-17,
+          "spectral_tail_fraction": 5.358616085165246e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14500000000000005,
+          "energy_budget_error": 6.148415110374117e-13
+        },
+        {
+          "energy": 0.49830616662414734,
+          "enstrophy": 1.1261386794796289,
+          "relative_divergence": 4.446027704722816e-18,
+          "reality_error": 8.640154811080764e-17,
+          "spectral_tail_fraction": 5.891680523306071e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15000000000000005,
+          "energy_budget_error": 6.519229600598919e-13
+        },
+        {
+          "energy": 0.49824986480608635,
+          "enstrophy": 1.1259340573153835,
+          "relative_divergence": 4.549462325949024e-18,
+          "reality_error": 7.691612236371843e-17,
+          "spectral_tail_fraction": 6.464934202952595e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15500000000000005,
+          "energy_budget_error": 6.903366767119223e-13
+        },
+        {
+          "energy": 0.4981935732171437,
+          "enstrophy": 1.1257295145379749,
+          "relative_divergence": 5.976756622949688e-18,
+          "reality_error": 8.749542400024486e-17,
+          "spectral_tail_fraction": 7.080199028090956e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.16000000000000006,
+          "energy_budget_error": 7.294165271787278e-13
+        },
+        {
+          "energy": 0.49813729185338357,
+          "enstrophy": 1.125525049815972,
+          "relative_divergence": 4.947568049104678e-18,
+          "reality_error": 9.531633798290848e-17,
+          "spectral_tail_fraction": 7.739299348169866e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.16500000000000006,
+          "energy_budget_error": 7.698286452750835e-13
+        },
+        {
+          "energy": 0.49808102071093613,
+          "enstrophy": 1.1253206618215343,
+          "relative_divergence": 5.3346744452916765e-18,
+          "reality_error": 9.757726418535654e-17,
+          "spectral_tail_fraction": 8.444057703827866e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.17000000000000007,
+          "energy_budget_error": 8.106848525812893e-13
+        },
+        {
+          "energy": 0.4980247597859984,
+          "enstrophy": 1.1251163492304463,
+          "relative_divergence": 5.064714350697758e-18,
+          "reality_error": 9.815120619464905e-17,
+          "spectral_tail_fraction": 9.196290597359268e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.17500000000000007,
+          "energy_budget_error": 8.528733275170453e-13
+        },
+        {
+          "energy": 0.4979685090748328,
+          "enstrophy": 1.1249121107221562,
+          "relative_divergence": 4.003210437867113e-18,
+          "reality_error": 9.960887682181834e-17,
+          "spectral_tail_fraction": 9.997804296964237e-07,
+          "out_of_band_fraction": 0.0,
+          "time": 0.18000000000000008,
+          "energy_budget_error": 8.952838470577262e-13
+        },
+        {
+          "energy": 0.4979122685737688,
+          "enstrophy": 1.1247079449798245,
+          "relative_divergence": 4.37491412869482e-18,
+          "reality_error": 9.9428516513335e-17,
+          "spectral_tail_fraction": 1.0850390683693877e-06,
+          "out_of_band_fraction": 0.0,
+          "time": 0.18500000000000008,
+          "energy_budget_error": 9.394707234378075e-13
+        },
+        {
+          "energy": 0.4978560382792005,
+          "enstrophy": 1.1245038506903806,
+          "relative_divergence": 3.944587120884734e-18,
+          "reality_error": 9.7053292049832e-17,
+          "spectral_tail_fraction": 1.175582314984581e-06,
+          "out_of_band_fraction": 0.0,
+          "time": 0.19000000000000009,
+          "energy_budget_error": 9.843237336326638e-13
+        },
+        {
+          "energy": 0.4977998181875879,
+          "enstrophy": 1.1242998265445847,
+          "relative_divergence": 4.756836044646919e-18,
+          "reality_error": 8.608185484320412e-17,
+          "spectral_tail_fraction": 1.2715852557388175e-06,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1950000000000001,
+          "energy_budget_error": 1.0296208330373702e-12
+        },
+        {
+          "energy": 0.4977436082954569,
+          "enstrophy": 1.124095871237101,
+          "relative_divergence": 5.161805608017723e-18,
+          "reality_error": 8.867193578600453e-17,
+          "spectral_tail_fraction": 1.3732203264792475e-06,
+          "out_of_band_fraction": 0.0,
+          "time": 0.2,
+          "energy_budget_error": 1.0764722446765518e-12
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "dt_max": 0.005,
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 40,
+        "max_actual_dt": 0.0050000000000000044,
+        "initial_energy": 0.5,
+        "final_energy": 0.4977436082958976,
+        "initial_enstrophy": 1.1323210147112996,
+        "final_enstrophy": 1.1240958700222483,
+        "enstrophy_ratio": 0.9927360310528649,
+        "max_energy_budget_error": 1.0795808691455022e-12,
+        "max_relative_divergence": 6.7027087141319435e-18,
+        "max_reality_error": 9.51926527909144e-17,
+        "max_spectral_tail_fraction": 4.510684825255662e-09
+      },
+      "history": [
+        {
+          "energy": 0.5,
+          "enstrophy": 1.1323210147112996,
+          "relative_divergence": 6.521015160956587e-18,
+          "reality_error": 7.928042419864551e-17,
+          "spectral_tail_fraction": 9.513496073149356e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0,
+          "energy_budget_error": 0.0
+        },
+        {
+          "energy": 0.4999433891408237,
+          "enstrophy": 1.1321133730167257,
+          "relative_divergence": 6.522602281391681e-18,
+          "reality_error": 8.459488261968354e-17,
+          "spectral_tail_fraction": 1.9550093324115046e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.005,
+          "energy_budget_error": 5.10702591327572e-15
+        },
+        {
+          "energy": 0.49988678866069713,
+          "enstrophy": 1.1319058525012025,
+          "relative_divergence": 4.6156098740211514e-18,
+          "reality_error": 8.184404166324807e-17,
+          "spectral_tail_fraction": 5.272822894808972e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.01,
+          "energy_budget_error": 1.1324274851176597e-14
+        },
+        {
+          "energy": 0.499830198553598,
+          "enstrophy": 1.1316984516997783,
+          "relative_divergence": 6.540563706779932e-18,
+          "reality_error": 8.664232220086352e-17,
+          "spectral_tail_fraction": 1.1816890077072996e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.015,
+          "energy_budget_error": 1.887379141862766e-14
+        },
+        {
+          "energy": 0.4997736188135772,
+          "enstrophy": 1.1314911691538618,
+          "relative_divergence": 3.2878901802028052e-18,
+          "reality_error": 8.171503336982008e-17,
+          "spectral_tail_fraction": 2.3101999793071407e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.02,
+          "energy_budget_error": 2.7755575615628914e-14
+        },
+        {
+          "energy": 0.49971704943475803,
+          "enstrophy": 1.1312840034110243,
+          "relative_divergence": 5.6946145545417686e-18,
+          "reality_error": 8.382946630260678e-17,
+          "spectral_tail_fraction": 4.122740627252076e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.025,
+          "energy_budget_error": 3.774758283725532e-14
+        },
+        {
+          "energy": 0.49966049041133676,
+          "enstrophy": 1.1310769530248137,
+          "relative_divergence": 4.6676651000122135e-18,
+          "reality_error": 8.343838796458207e-17,
+          "spectral_tail_fraction": 6.885464503304456e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.030000000000000002,
+          "energy_budget_error": 4.907185768843192e-14
+        },
+        {
+          "energy": 0.4996039417375814,
+          "enstrophy": 1.13087001655457,
+          "relative_divergence": 5.699219881254649e-18,
+          "reality_error": 7.625872983379645e-17,
+          "spectral_tail_fraction": 1.0918160996845767e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.035,
+          "energy_budget_error": 6.128431095930864e-14
+        },
+        {
+          "energy": 0.4995474034078322,
+          "enstrophy": 1.1306631925652435,
+          "relative_divergence": 6.589664185888291e-18,
+          "reality_error": 8.797602484565144e-17,
+          "spectral_tail_fraction": 1.6591315088324004e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.04,
+          "energy_budget_error": 7.482903185973555e-14
+        },
+        {
+          "energy": 0.4994908754165006,
+          "enstrophy": 1.130456479627226,
+          "relative_divergence": 6.7027087141319435e-18,
+          "reality_error": 8.135627066175959e-17,
+          "spectral_tail_fraction": 2.432284867742855e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.045,
+          "energy_budget_error": 8.926193117986259e-14
+        },
+        {
+          "energy": 0.4994343577580701,
+          "enstrophy": 1.130249876316183,
+          "relative_divergence": 5.66755981291387e-18,
+          "reality_error": 8.356652557036496e-17,
+          "spectral_tail_fraction": 3.457457639035859e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.049999999999999996,
+          "energy_budget_error": 1.0502709812953981e-13
+        },
+        {
+          "energy": 0.49937785042709465,
+          "enstrophy": 1.1300433812128932,
+          "relative_divergence": 3.365508282431443e-18,
+          "reality_error": 8.903017769688771e-17,
+          "spectral_tail_fraction": 4.7848411903608193e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05499999999999999,
+          "energy_budget_error": 1.2212453270876722e-13
+        },
+        {
+          "energy": 0.4993213534181993,
+          "enstrophy": 1.1298369929030958,
+          "relative_divergence": 3.3155936276346434e-18,
+          "reality_error": 9.51926527909144e-17,
+          "spectral_tail_fraction": 6.468236369658575e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05999999999999999,
+          "energy_budget_error": 1.4055423491754482e-13
+        },
+        {
+          "energy": 0.4992648667260792,
+          "enstrophy": 1.129630709977344,
+          "relative_divergence": 5.097606031235131e-18,
+          "reality_error": 7.815816980151431e-17,
+          "spectral_tail_fraction": 8.564636174671872e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06499999999999999,
+          "energy_budget_error": 1.596500709410975e-13
+        },
+        {
+          "energy": 0.49920839034550085,
+          "enstrophy": 1.129424531030865,
+          "relative_divergence": 5.163246341490099e-18,
+          "reality_error": 8.451750718074185e-17,
+          "spectral_tail_fraction": 1.1133795899472098e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06999999999999999,
+          "energy_budget_error": 1.800781745942004e-13
+        },
+        {
+          "energy": 0.49915192427130006,
+          "enstrophy": 1.1292184546634296,
+          "relative_divergence": 5.974552014210392e-18,
+          "reality_error": 8.430861941902269e-17,
+          "spectral_tail_fraction": 1.4237795342233335e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.075,
+          "energy_budget_error": 2.0161650127192843e-13
+        },
+        {
+          "energy": 0.4990954684983827,
+          "enstrophy": 1.1290124794792258,
+          "relative_divergence": 5.165404759554681e-18,
+          "reality_error": 8.835495898632879e-17,
+          "spectral_tail_fraction": 1.7940597828966277e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08,
+          "energy_budget_error": 2.240430063693566e-13
+        },
+        {
+          "energy": 0.4990390230217247,
+          "enstrophy": 1.1288066040867422,
+          "relative_divergence": 3.564289304302555e-18,
+          "reality_error": 7.57002142376704e-17,
+          "spectral_tail_fraction": 2.2307610946576696e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.085,
+          "energy_budget_error": 2.4802382370125997e-13
+        },
+        {
+          "energy": 0.49898258783637084,
+          "enstrophy": 1.1286008270986612,
+          "relative_divergence": 6.0015979757338165e-18,
+          "reality_error": 7.462696268563709e-17,
+          "spectral_tail_fraction": 2.7405253984741314e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09000000000000001,
+          "energy_budget_error": 2.728928194528635e-13
+        },
+        {
+          "energy": 0.49892616293743575,
+          "enstrophy": 1.128395147131754,
+          "relative_divergence": 1.1692839434201639e-18,
+          "reality_error": 8.160869648944303e-17,
+          "spectral_tail_fraction": 3.3300537159207145e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09500000000000001,
+          "energy_budget_error": 2.9887203822909214e-13
+        },
+        {
+          "energy": 0.4988697483201025,
+          "enstrophy": 1.128189562806791,
+          "relative_divergence": 4.968103215121392e-18,
+          "reality_error": 7.715459726859643e-17,
+          "spectral_tail_fraction": 4.0060657728902653e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10000000000000002,
+          "energy_budget_error": 3.255173908200959e-13
+        },
+        {
+          "energy": 0.49881334397962385,
+          "enstrophy": 1.1279840727484551,
+          "relative_divergence": 5.036388529698071e-18,
+          "reality_error": 7.837104267556573e-17,
+          "spectral_tail_fraction": 4.775261812554797e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10500000000000002,
+          "energy_budget_error": 3.5371705564557487e-13
+        },
+        {
+          "energy": 0.4987569499113205,
+          "enstrophy": 1.1277786755852652,
+          "relative_divergence": 5.9472402322046325e-18,
+          "reality_error": 7.752832773945283e-17,
+          "spectral_tail_fraction": 5.644287118733415e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11000000000000003,
+          "energy_budget_error": 3.83026943495679e-13
+        },
+        {
+          "energy": 0.49870056611058206,
+          "enstrophy": 1.1275733699495083,
+          "relative_divergence": 5.480927036609935e-18,
+          "reality_error": 8.713453275759168e-17,
+          "spectral_tail_fraction": 6.619699752789103e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11500000000000003,
+          "energy_budget_error": 4.1322500976548326e-13
+        },
+        {
+          "energy": 0.4986441925728661,
+          "enstrophy": 1.1273681544771803,
+          "relative_divergence": 3.1687620426689357e-18,
+          "reality_error": 7.776204839426396e-17,
+          "spectral_tail_fraction": 7.70794199786213e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12000000000000004,
+          "energy_budget_error": 4.445332990599127e-13
+        },
+        {
+          "energy": 0.4985878292936984,
+          "enstrophy": 1.1271630278079323,
+          "relative_divergence": 4.838099023224383e-18,
+          "reality_error": 8.194257604493888e-17,
+          "spectral_tail_fraction": 8.915315991703876e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12500000000000003,
+          "energy_budget_error": 4.767297667740422e-13
+        },
+        {
+          "energy": 0.498531476268673,
+          "enstrophy": 1.1269579885850303,
+          "relative_divergence": 3.3723926131510937e-18,
+          "reality_error": 7.507513401107056e-17,
+          "spectral_tail_fraction": 1.0247964013682015e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13000000000000003,
+          "energy_budget_error": 5.102585021177219e-13
+        },
+        {
+          "energy": 0.4984751334934512,
+          "enstrophy": 1.1267530354553195,
+          "relative_divergence": 5.951325398817449e-18,
+          "reality_error": 8.638228198443639e-17,
+          "spectral_tail_fraction": 1.1711853872765561e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13500000000000004,
+          "energy_budget_error": 5.444533712761768e-13
+        },
+        {
+          "energy": 0.4984188009637621,
+          "enstrophy": 1.1265481670691984,
+          "relative_divergence": 2.837906755051166e-18,
+          "reality_error": 8.513338083945668e-17,
+          "spectral_tail_fraction": 1.3312769821579177e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14000000000000004,
+          "energy_budget_error": 5.797584634592567e-13
+        },
+        {
+          "energy": 0.4983624786754025,
+          "enstrophy": 1.126343382080601,
+          "relative_divergence": 2.4581674864180526e-18,
+          "reality_error": 8.572490407694282e-17,
+          "spectral_tail_fraction": 1.5056309397051117e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14500000000000005,
+          "energy_budget_error": 6.161737786669619e-13
+        },
+        {
+          "energy": 0.49830616662423566,
+          "enstrophy": 1.12613867914699,
+          "relative_divergence": 4.646767139395309e-18,
+          "reality_error": 8.264108854950987e-17,
+          "spectral_tail_fraction": 1.6947886560903485e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15000000000000005,
+          "energy_budget_error": 6.534772722943671e-13
+        },
+        {
+          "energy": 0.4982498648061927,
+          "enstrophy": 1.1259340569293532,
+          "relative_divergence": 2.952351070858595e-18,
+          "reality_error": 7.90122193210243e-17,
+          "spectral_tail_fraction": 1.89927414833946e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15500000000000005,
+          "energy_budget_error": 6.921130335513226e-13
+        },
+        {
+          "energy": 0.498193573217271,
+          "enstrophy": 1.1257295140922126,
+          "relative_divergence": 2.4589987132802278e-18,
+          "reality_error": 8.059774743570073e-17,
+          "spectral_tail_fraction": 2.1195957281472865e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.16000000000000006,
+          "energy_budget_error": 7.316369732279782e-13
+        },
+        {
+          "energy": 0.4981372918535347,
+          "enstrophy": 1.125525049303641,
+          "relative_divergence": 5.1722787395912945e-18,
+          "reality_error": 8.454453076388997e-17,
+          "spectral_tail_fraction": 2.356248398801323e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.16500000000000006,
+          "energy_budget_error": 7.718270467194088e-13
+        },
+        {
+          "energy": 0.4980810207111148,
+          "enstrophy": 1.1253206612352864,
+          "relative_divergence": 2.958313506725843e-18,
+          "reality_error": 7.852510610324505e-17,
+          "spectral_tail_fraction": 2.6097169992262017e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.17000000000000007,
+          "energy_budget_error": 8.129052986305396e-13
+        },
+        {
+          "energy": 0.49802475978620847,
+          "enstrophy": 1.1251163485624038,
+          "relative_divergence": 4.0912205003165014e-18,
+          "reality_error": 8.419619707298965e-17,
+          "spectral_tail_fraction": 2.880480115318826e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.17500000000000007,
+          "energy_budget_error": 8.550937735662956e-13
+        },
+        {
+          "energy": 0.4979685090750788,
+          "enstrophy": 1.1249121099638952,
+          "relative_divergence": 2.339373214872423e-18,
+          "reality_error": 7.061670769939443e-17,
+          "spectral_tail_fraction": 3.1690147747355022e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.18000000000000008,
+          "energy_budget_error": 8.981704269217516e-13
+        },
+        {
+          "energy": 0.497912268574055,
+          "enstrophy": 1.1247079441223597,
+          "relative_divergence": 2.3259758917028383e-18,
+          "reality_error": 8.069584926781616e-17,
+          "spectral_tail_fraction": 3.4758019371358064e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.18500000000000008,
+          "energy_budget_error": 9.419132140919828e-13
+        },
+        {
+          "energy": 0.4978560382795324,
+          "enstrophy": 1.1245038497241475,
+          "relative_divergence": 1.6994172399774412e-18,
+          "reality_error": 8.572446635821674e-17,
+          "spectral_tail_fraction": 3.801332787605624e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.19000000000000009,
+          "energy_budget_error": 9.872103134966892e-13
+        },
+        {
+          "energy": 0.4977998181879711,
+          "enstrophy": 1.1242998254594259,
+          "relative_divergence": 2.029954196006791e-18,
+          "reality_error": 7.411398866136909e-17,
+          "spectral_tail_fraction": 4.146115836597162e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1950000000000001,
+          "energy_budget_error": 1.0325074129013956e-12
+        },
+        {
+          "energy": 0.4977436082958976,
+          "enstrophy": 1.1240958700222483,
+          "relative_divergence": 4.638665315059401e-18,
+          "reality_error": 7.553141123520147e-17,
+          "spectral_tail_fraction": 4.510684825255662e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.2,
+          "energy_budget_error": 1.0795808691455022e-12
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "dt_max": 0.005,
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 56,
+        "max_actual_dt": 0.003636910321353104,
+        "initial_energy": 0.49999999999999983,
+        "final_energy": 0.4977436082953403,
+        "initial_enstrophy": 1.132321014711299,
+        "final_enstrophy": 1.1240958700166057,
+        "enstrophy_ratio": 0.9927360310478823,
+        "max_energy_budget_error": 3.169686735304823e-13,
+        "max_relative_divergence": 9.467699902545627e-18,
+        "max_reality_error": 1.3894822282855718e-16,
+        "max_spectral_tail_fraction": 3.9598194300673804e-13
+      },
+      "history": [
+        {
+          "energy": 0.49999999999999983,
+          "enstrophy": 1.132321014711299,
+          "relative_divergence": 9.467699902545627e-18,
+          "reality_error": 1.2278439117809414e-16,
+          "spectral_tail_fraction": 1.2605858897912945e-28,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0,
+          "energy_budget_error": 0.0
+        },
+        {
+          "energy": 0.4999590194964324,
+          "enstrophy": 1.132170694878369,
+          "relative_divergence": 9.579384076804758e-20,
+          "reality_error": 1.2405028376918393e-16,
+          "spectral_tail_fraction": 3.5766666438299286e-22,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0036193997610009104,
+          "energy_budget_error": 1.4432899320127039e-15
+        },
+        {
+          "energy": 0.4999180479287472,
+          "enstrophy": 1.1320204515753016,
+          "relative_divergence": 2.140513255293715e-19,
+          "reality_error": 1.2903596456846272e-16,
+          "spectral_tail_fraction": 4.831115660848572e-21,
+          "out_of_band_fraction": 0.0,
+          "time": 0.007238490661756799,
+          "energy_budget_error": 2.997602166487924e-15
+        },
+        {
+          "energy": 0.49987708436374284,
+          "enstrophy": 1.1318702808222334,
+          "relative_divergence": 5.474023865442689e-18,
+          "reality_error": 1.3638498418194584e-16,
+          "spectral_tail_fraction": 2.4393215085667068e-20,
+          "out_of_band_fraction": 0.0,
+          "time": 0.010857354824224293,
+          "energy_budget_error": 4.773959005888175e-15
+        },
+        {
+          "energy": 0.4998361278680442,
+          "enstrophy": 1.1317201786444955,
+          "relative_divergence": 2.799332545529576e-19,
+          "reality_error": 1.2902521521484503e-16,
+          "spectral_tail_fraction": 8.00271393845277e-20,
+          "out_of_band_fraction": 0.0,
+          "time": 0.014476074431152688,
+          "energy_budget_error": 6.550315845288426e-15
+        },
+        {
+          "energy": 0.49979517750825814,
+          "enstrophy": 1.1315701410730223,
+          "relative_divergence": 3.893299595788038e-18,
+          "reality_error": 1.1879820316534233e-16,
+          "spectral_tail_fraction": 2.0703138278711833e-19,
+          "out_of_band_fraction": 0.0,
+          "time": 0.01809473171235246,
+          "energy_budget_error": 8.548717289613709e-15
+        },
+        {
+          "energy": 0.49975423235112376,
+          "enstrophy": 1.1314201641447421,
+          "relative_divergence": 4.3132888641359065e-19,
+          "reality_error": 1.2406960397269914e-16,
+          "spectral_tail_fraction": 4.614631396319348e-19,
+          "out_of_band_fraction": 0.0,
+          "time": 0.02171340893133569,
+          "energy_budget_error": 1.0991207943789053e-14
+        },
+        {
+          "energy": 0.4997132914636588,
+          "enstrophy": 1.131270243902954,
+          "relative_divergence": 3.874417657117102e-18,
+          "reality_error": 1.3196964488689558e-16,
+          "spectral_tail_fraction": 9.291145849907942e-19,
+          "out_of_band_fraction": 0.0,
+          "time": 0.025332188372363014,
+          "energy_budget_error": 1.3211653993039368e-14
+        },
+        {
+          "energy": 0.4996723539133013,
+          "enstrophy": 1.131120376397688,
+          "relative_divergence": 5.423331710307175e-19,
+          "reality_error": 1.3215481414229812e-16,
+          "spectral_tail_fraction": 1.737546077719101e-18,
+          "out_of_band_fraction": 0.0,
+          "time": 0.028951152327930607,
+          "energy_budget_error": 1.5876189252139745e-14
+        },
+        {
+          "energy": 0.49963141876804434,
+          "enstrophy": 1.1309705576860412,
+          "relative_divergence": 5.426651856347617e-19,
+          "reality_error": 1.2865555631287282e-16,
+          "spectral_tail_fraction": 3.071835235921628e-18,
+          "out_of_band_fraction": 0.0,
+          "time": 0.032570383086729444,
+          "energy_budget_error": 1.854072451124012e-14
+        },
+        {
+          "energy": 0.4995904850965673,
+          "enstrophy": 1.1308207838324984,
+          "relative_divergence": 1.1407102974637506e-18,
+          "reality_error": 1.1750561947902796e-16,
+          "spectral_tail_fraction": 5.194843241325792e-18,
+          "out_of_band_fraction": 0.0,
+          "time": 0.03618996292210782,
+          "energy_budget_error": 2.164934898019056e-14
+        },
+        {
+          "energy": 0.4995495519683585,
+          "enstrophy": 1.13067105090923,
+          "relative_divergence": 1.1622278606997964e-18,
+          "reality_error": 1.170545339169844e-16,
+          "spectral_tail_fraction": 8.472951636356889e-18,
+          "out_of_band_fraction": 0.0,
+          "time": 0.03980997408104528,
+          "energy_budget_error": 2.4757973449141e-14
+        },
+        {
+          "energy": 0.4995086184538456,
+          "enstrophy": 1.130521354996411,
+          "relative_divergence": 3.9224906359735504e-18,
+          "reality_error": 1.3210071966736695e-16,
+          "spectral_tail_fraction": 1.3408386210698968e-17,
+          "out_of_band_fraction": 0.0,
+          "time": 0.043430498772677406,
+          "energy_budget_error": 2.7644553313166407e-14
+        },
+        {
+          "energy": 0.4994676836244902,
+          "enstrophy": 1.1303716921824136,
+          "relative_divergence": 1.3827996104946956e-19,
+          "reality_error": 1.3020273420380787e-16,
+          "spectral_tail_fraction": 2.0679421283465144e-17,
+          "out_of_band_fraction": 0.0,
+          "time": 0.04705161915984878,
+          "energy_budget_error": 3.097522238704188e-14
+        },
+        {
+          "energy": 0.49942674655289765,
+          "enstrophy": 1.1302220585640586,
+          "relative_divergence": 6.903315781775854e-19,
+          "reality_error": 1.233138283261037e-16,
+          "spectral_tail_fraction": 3.118994967039541e-17,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05067341734927809,
+          "energy_budget_error": 3.452793606584238e-14
+        },
+        {
+          "energy": 0.49938580631291496,
+          "enstrophy": 1.130072450246818,
+          "relative_divergence": 5.006172687644247e-19,
+          "reality_error": 1.2421597563543072e-16,
+          "spectral_tail_fraction": 4.613011268568049e-17,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05429597538290756,
+          "energy_budget_error": 3.8524738954492945e-14
+        },
+        {
+          "energy": 0.4993448619797195,
+          "enstrophy": 1.1299228633449958,
+          "relative_divergence": 3.870221857771501e-18,
+          "reality_error": 1.2572024032527997e-16,
+          "spectral_tail_fraction": 6.704991260254011e-17,
+          "out_of_band_fraction": 0.0,
+          "time": 0.057919375229904264,
+          "energy_budget_error": 4.2299497238218477e-14
+        },
+        {
+          "energy": 0.49930391262990254,
+          "enstrophy": 1.129773293981876,
+          "relative_divergence": 9.22197528943752e-20,
+          "reality_error": 1.3739316832343409e-16,
+          "spectral_tail_fraction": 9.594797878342794e-17,
+          "out_of_band_fraction": 0.0,
+          "time": 0.061543698779331885,
+          "energy_budget_error": 4.651834473179407e-14
+        },
+        {
+          "energy": 0.49926297537274594,
+          "enstrophy": 1.1296238041263682,
+          "relative_divergence": 5.578081291302625e-18,
+          "reality_error": 1.237137865646165e-16,
+          "spectral_tail_fraction": 1.3535780817753754e-16,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06516743162026238,
+          "energy_budget_error": 5.073719222536967e-14
+        },
+        {
+          "energy": 0.49922204946456333,
+          "enstrophy": 1.1294743905193454,
+          "relative_divergence": 1.284368053251695e-18,
+          "reality_error": 1.2945777647701188e-16,
+          "spectral_tail_fraction": 1.8849380071302678e-16,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06879063918574509,
+          "energy_budget_error": 5.51780843238703e-14
+        },
+        {
+          "energy": 0.4991811339280202,
+          "enstrophy": 1.1293250490531213,
+          "relative_divergence": 1.5325081143745507e-18,
+          "reality_error": 1.3083446049890883e-16,
+          "spectral_tail_fraction": 2.5939031311193267e-16,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0724134076345217,
+          "energy_budget_error": 5.984102102729596e-14
+        },
+        {
+          "energy": 0.49914022778632544,
+          "enstrophy": 1.129175775626792,
+          "relative_divergence": 4.354870325219293e-18,
+          "reality_error": 1.3198369827908e-16,
+          "spectral_tail_fraction": 3.5307361120377697e-16,
+          "out_of_band_fraction": 0.0,
+          "time": 0.07603582312465247,
+          "energy_budget_error": 6.428191312579659e-14
+        },
+        {
+          "energy": 0.4990993300710244,
+          "enstrophy": 1.1290265661745158,
+          "relative_divergence": 4.43536807690727e-18,
+          "reality_error": 1.1980860301258374e-16,
+          "spectral_tail_fraction": 4.757630970277156e-16,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0796579711232397,
+          "energy_budget_error": 6.938893903907231e-14
+        },
+        {
+          "energy": 0.4990584398134561,
+          "enstrophy": 1.1288774166341748,
+          "relative_divergence": 4.32819348195609e-18,
+          "reality_error": 1.2757024475558548e-16,
+          "spectral_tail_fraction": 6.351055988961133e-16,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08327993716260607,
+          "energy_budget_error": 7.4273920347423e-14
+        },
+        {
+          "energy": 0.49901755604185427,
+          "enstrophy": 1.128728322936663,
+          "relative_divergence": 9.769228451931934e-19,
+          "reality_error": 1.3339312930218788e-16,
+          "spectral_tail_fraction": 8.404469673150844e-16,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08690180709719701,
+          "energy_budget_error": 7.960299086562375e-14
+        },
+        {
+          "energy": 0.498976677785627,
+          "enstrophy": 1.128579281021357,
+          "relative_divergence": 3.999579310000874e-18,
+          "reality_error": 1.240386117896107e-16,
+          "spectral_tail_fraction": 1.1031456254153285e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09052366672445793,
+          "energy_budget_error": 8.49320613838245e-14
+        },
+        {
+          "energy": 0.49893580407544896,
+          "enstrophy": 1.1284302868363074,
+          "relative_divergence": 9.866728101983731e-19,
+          "reality_error": 1.330005283712415e-16,
+          "spectral_tail_fraction": 1.4369332280954918e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09414560177663987,
+          "energy_budget_error": 9.048317650695028e-14
+        },
+        {
+          "energy": 0.49889493394334533,
+          "enstrophy": 1.128281336338401,
+          "relative_divergence": 4.108462255295371e-18,
+          "reality_error": 1.265302691546445e-16,
+          "spectral_tail_fraction": 1.8583280169574593e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09776769791325426,
+          "energy_budget_error": 9.603429163007608e-14
+        },
+        {
+          "energy": 0.49885406642276847,
+          "enstrophy": 1.128132425493498,
+          "relative_divergence": 3.991701161416835e-18,
+          "reality_error": 1.277838883103237e-16,
+          "spectral_tail_fraction": 2.38710696829756e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10139004071419157,
+          "energy_budget_error": 1.0180745135812689e-13
+        },
+        {
+          "energy": 0.49881320054866696,
+          "enstrophy": 1.1279835502765443,
+          "relative_divergence": 3.992123244606038e-18,
+          "reality_error": 1.2663316104500377e-16,
+          "spectral_tail_fraction": 3.046843363526006e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10501271567351667,
+          "energy_budget_error": 1.0802470029602777e-13
+        },
+        {
+          "energy": 0.49877233535754667,
+          "enstrophy": 1.1278347066716548,
+          "relative_divergence": 9.789843591978275e-19,
+          "reality_error": 1.2778368319812243e-16,
+          "spectral_tail_fraction": 3.865516973545416e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10863580819395181,
+          "energy_budget_error": 1.1401990462900363e-13
+        },
+        {
+          "energy": 0.4987314698875245,
+          "enstrophy": 1.1276858906721727,
+          "relative_divergence": 6.850739872416857e-18,
+          "reality_error": 1.3612218180727908e-16,
+          "spectral_tail_fraction": 4.876204641101434e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11225940358205559,
+          "energy_budget_error": 1.202371535669045e-13
+        },
+        {
+          "energy": 0.49869060317837344,
+          "enstrophy": 1.127537098280698,
+          "relative_divergence": 4.333106086597747e-18,
+          "reality_error": 1.2520461823859212e-16,
+          "spectral_tail_fraction": 6.117859668533939e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1158835870441046,
+          "energy_budget_error": 1.266764471097304e-13
+        },
+        {
+          "energy": 0.49864973427156034,
+          "enstrophy": 1.1273883255090922,
+          "relative_divergence": 4.109356464133639e-18,
+          "reality_error": 1.2509080682985645e-16,
+          "spectral_tail_fraction": 7.636189071063191e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11950844368268235,
+          "energy_budget_error": 1.3333778525748135e-13
+        },
+        {
+          "energy": 0.49860886221071254,
+          "enstrophy": 1.1272395683800456,
+          "relative_divergence": 2.1750062746736848e-18,
+          "reality_error": 1.2632915072517077e-16,
+          "spectral_tail_fraction": 9.484638417538934e-15,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12313405845518027,
+          "energy_budget_error": 1.399991234052323e-13
+        },
+        {
+          "energy": 0.4985679860408962,
+          "enstrophy": 1.127090822924318,
+          "relative_divergence": 2.170623154228088e-18,
+          "reality_error": 1.2010098843036326e-16,
+          "spectral_tail_fraction": 1.1725494779551382e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12676051623774723,
+          "energy_budget_error": 1.4688250615790826e-13
+        },
+        {
+          "energy": 0.498527104808923,
+          "enstrophy": 1.1269420851817302,
+          "relative_divergence": 4.002100295952393e-18,
+          "reality_error": 1.285013538539519e-16,
+          "spectral_tail_fraction": 1.4431118908841227e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13038790179797313,
+          "energy_budget_error": 1.542099781204343e-13
+        },
+        {
+          "energy": 0.49848622062487546,
+          "enstrophy": 1.1267933623368847,
+          "relative_divergence": 1.9427787165093703e-18,
+          "reality_error": 1.2004446920051248e-16,
+          "spectral_tail_fraction": 1.7685052139382457e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13401602809234103,
+          "energy_budget_error": 1.6153745008296033e-13
+        },
+        {
+          "energy": 0.4984453387381089,
+          "enstrophy": 1.1266446729861195,
+          "relative_divergence": 3.998417562231918e-18,
+          "reality_error": 1.2770019971513234e-16,
+          "spectral_tail_fraction": 2.1583274718103347e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13764442934102228,
+          "energy_budget_error": 1.6864287744056133e-13
+        },
+        {
+          "energy": 0.49840445830360286,
+          "enstrophy": 1.1264960135534938,
+          "relative_divergence": 1.6926618377010779e-18,
+          "reality_error": 1.3618272867232977e-16,
+          "spectral_tail_fraction": 2.6236644235527372e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14127318052273652,
+          "energy_budget_error": 1.7641443861293742e-13
+        },
+        {
+          "energy": 0.49836357848044127,
+          "enstrophy": 1.126347380480645,
+          "relative_divergence": 7.31575482878804e-18,
+          "reality_error": 1.2390606993904999e-16,
+          "spectral_tail_fraction": 3.177236443933283e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1449023562929212,
+          "energy_budget_error": 1.8418599978531352e-13
+        },
+        {
+          "energy": 0.4983226984317973,
+          "enstrophy": 1.1261987702266159,
+          "relative_divergence": 3.3645482455959718e-18,
+          "reality_error": 1.3894822282855718e-16,
+          "spectral_tail_fraction": 3.8336010266875856e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14853203098493903,
+          "energy_budget_error": 1.917355163527646e-13
+        },
+        {
+          "energy": 0.49828181732490895,
+          "enstrophy": 1.1260501792676518,
+          "relative_divergence": 3.3601589829510056e-18,
+          "reality_error": 1.31567547447764e-16,
+          "spectral_tail_fraction": 4.609375699809608e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15216227861199488,
+          "energy_budget_error": 1.9995116673499077e-13
+        },
+        {
+          "energy": 0.4982409343310466,
+          "enstrophy": 1.1259016040969783,
+          "relative_divergence": 5.818097045790217e-18,
+          "reality_error": 1.314686891835712e-16,
+          "spectral_tail_fraction": 5.5234829216167184e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15579317286974823,
+          "energy_budget_error": 2.0816681711721693e-13
+        },
+        {
+          "energy": 0.4982000486254739,
+          "enstrophy": 1.1257530412245442,
+          "relative_divergence": 4.338293613635534e-18,
+          "reality_error": 1.2618029307367982e-16,
+          "spectral_tail_fraction": 6.597418601857242e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15942478713960584,
+          "energy_budget_error": 2.1638246749944309e-13
+        },
+        {
+          "energy": 0.49815915938740074,
+          "enstrophy": 1.1256044871767485,
+          "relative_divergence": 5.657455131487028e-18,
+          "reality_error": 1.282980561128229e-16,
+          "spectral_tail_fraction": 7.855545967728326e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.16305719449267858,
+          "energy_budget_error": 2.2482016248659428e-13
+        },
+        {
+          "energy": 0.4981182657999289,
+          "enstrophy": 1.1254559384961413,
+          "relative_divergence": 4.035040540428408e-18,
+          "reality_error": 1.3018179556036148e-16,
+          "spectral_tail_fraction": 9.325416569322062e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1666904676943849,
+          "energy_budget_error": 2.334799020786705e-13
+        },
+        {
+          "energy": 0.49807736713354217,
+          "enstrophy": 1.1253073920445384,
+          "relative_divergence": 5.653279583534486e-18,
+          "reality_error": 1.2788913205343718e-16,
+          "spectral_tail_fraction": 1.1038116523433149e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.17032467178494068,
+          "energy_budget_error": 2.4236168627567177e-13
+        },
+        {
+          "energy": 0.49803646377247257,
+          "enstrophy": 1.1251588487297928,
+          "relative_divergence": 4.552812502404596e-18,
+          "reality_error": 1.2883296617325236e-16,
+          "spectral_tail_fraction": 1.30285906985556e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.17395977285457803,
+          "energy_budget_error": 2.5124347047267303e-13
+        },
+        {
+          "energy": 0.49799555488607394,
+          "enstrophy": 1.1250103050481743,
+          "relative_divergence": 4.5493757424659305e-18,
+          "reality_error": 1.3601973969622237e-16,
+          "spectral_tail_fraction": 1.533615111478094e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.17759584496534395,
+          "energy_budget_error": 2.603472992745993e-13
+        },
+        {
+          "energy": 0.497954641971413,
+          "enstrophy": 1.124861765948217,
+          "relative_divergence": 5.922666666535974e-18,
+          "reality_error": 1.284043329081171e-16,
+          "spectral_tail_fraction": 1.8004721433597645e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.18123275528669705,
+          "energy_budget_error": 2.694511280765256e-13
+        },
+        {
+          "energy": 0.49791373849580756,
+          "enstrophy": 1.124713279827156,
+          "relative_divergence": 3.3643783281933368e-18,
+          "reality_error": 1.252164324615907e-16,
+          "spectral_tail_fraction": 2.1082419756920212e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1848693066258829,
+          "energy_budget_error": 2.785549568784519e-13
+        },
+        {
+          "energy": 0.49787284351230066,
+          "enstrophy": 1.1245648427423254,
+          "relative_divergence": 4.448173257161455e-18,
+          "reality_error": 1.3881457989633467e-16,
+          "spectral_tail_fraction": 2.4623774716133655e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1885055829241552,
+          "energy_budget_error": 2.878808302853032e-13
+        },
+        {
+          "energy": 0.49783195607699404,
+          "enstrophy": 1.1244164507650682,
+          "relative_divergence": 4.874470741348756e-18,
+          "reality_error": 1.301098004146153e-16,
+          "spectral_tail_fraction": 2.868951223666116e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1921416678967474,
+          "energy_budget_error": 2.9742874829707954e-13
+        },
+        {
+          "energy": 0.4977910752489804,
+          "enstrophy": 1.1242680999803851,
+          "relative_divergence": 4.7533404730188696e-18,
+          "reality_error": 1.300242075064922e-16,
+          "spectral_tail_fraction": 3.3347137844023657e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.19577764503874803,
+          "energy_budget_error": 3.071987109137809e-13
+        },
+        {
+          "energy": 0.49775020009026777,
+          "enstrophy": 1.1241197864865533,
+          "relative_divergence": 5.515447309093267e-18,
+          "reality_error": 1.3521185609480633e-16,
+          "spectral_tail_fraction": 3.8671561611099853e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.199413597631629,
+          "energy_budget_error": 3.169686735304823e-13
+        },
+        {
+          "energy": 0.4977436082953403,
+          "enstrophy": 1.1240958700166057,
+          "relative_divergence": 3.3666655515413376e-18,
+          "reality_error": 1.3627697206420261e-16,
+          "spectral_tail_fraction": 3.9598194300673804e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.2,
+          "energy_budget_error": 3.169686735304823e-13
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "dt_max": 0.0025,
+      "summary": {
+        "status": "completed",
+        "reason": null,
+        "final_time": 0.2,
+        "steps": 80,
+        "max_actual_dt": 0.0025000000000000022,
+        "initial_energy": 0.5,
+        "final_energy": 0.49774360829516784,
+        "initial_enstrophy": 1.1323210147112996,
+        "final_enstrophy": 1.1240958700160593,
+        "enstrophy_ratio": 0.9927360310473992,
+        "max_energy_budget_error": 7.549516567451064e-14,
+        "max_relative_divergence": 7.335207947531416e-18,
+        "max_reality_error": 1.008993508538649e-16,
+        "max_spectral_tail_fraction": 4.5106918778766575e-09
+      },
+      "history": [
+        {
+          "energy": 0.5,
+          "enstrophy": 1.1323210147112996,
+          "relative_divergence": 6.521015160956587e-18,
+          "reality_error": 7.928042419864551e-17,
+          "spectral_tail_fraction": 9.513496073149356e-14,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0,
+          "energy_budget_error": 0.0
+        },
+        {
+          "energy": 0.49997169327264734,
+          "enstrophy": 1.1322171786247675,
+          "relative_divergence": 6.521589580705309e-18,
+          "reality_error": 8.207478972459595e-17,
+          "spectral_tail_fraction": 1.1969617676257618e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0025,
+          "energy_budget_error": 2.220446049250313e-16
+        },
+        {
+          "energy": 0.49994338914081543,
+          "enstrophy": 1.1321133730166246,
+          "relative_divergence": 6.522073991354556e-18,
+          "reality_error": 7.826596311573236e-17,
+          "spectral_tail_fraction": 1.9550167469429962e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.005,
+          "energy_budget_error": 4.440892098500626e-16
+        },
+        {
+          "energy": 0.4999150876037447,
+          "enstrophy": 1.1320095977031408,
+          "relative_divergence": 6.5254780163645216e-18,
+          "reality_error": 9.19296140184921e-17,
+          "spectral_tail_fraction": 3.2819684578930707e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0075,
+          "energy_budget_error": 8.881784197001252e-16
+        },
+        {
+          "energy": 0.4998867886606799,
+          "enstrophy": 1.1319058525009977,
+          "relative_divergence": 5.6511433259097376e-18,
+          "reality_error": 7.323560781682664e-17,
+          "spectral_tail_fraction": 5.272852562114513e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.01,
+          "energy_budget_error": 8.881784197001252e-16
+        },
+        {
+          "energy": 0.49985849231087087,
+          "enstrophy": 1.1318021372272793,
+          "relative_divergence": 3.267795786357181e-18,
+          "reality_error": 9.121496867802286e-17,
+          "spectral_tail_fraction": 8.060878863643215e-13,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0125,
+          "energy_budget_error": 1.3322676295501878e-15
+        },
+        {
+          "energy": 0.49983019855357147,
+          "enstrophy": 1.1316984516994673,
+          "relative_divergence": 4.629137355634841e-18,
+          "reality_error": 7.088617946385747e-17,
+          "spectral_tail_fraction": 1.1816957687582216e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.015000000000000001,
+          "energy_budget_error": 1.5543122344752192e-15
+        },
+        {
+          "energy": 0.4998019073880403,
+          "enstrophy": 1.1315947957354355,
+          "relative_divergence": 3.2765839301995472e-18,
+          "reality_error": 8.324045327177181e-17,
+          "spectral_tail_fraction": 1.674916142290184e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0175,
+          "energy_budget_error": 1.9984014443252818e-15
+        },
+        {
+          "energy": 0.49977361881354054,
+          "enstrophy": 1.131491169153442,
+          "relative_divergence": 6.536386880613541e-18,
+          "reality_error": 8.216914650956272e-17,
+          "spectral_tail_fraction": 2.3102122570242774e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.02,
+          "energy_budget_error": 2.220446049250313e-15
+        },
+        {
+          "energy": 0.49974533282933997,
+          "enstrophy": 1.1313875717721242,
+          "relative_divergence": 4.63585166646843e-18,
+          "reality_error": 8.871315858782926e-17,
+          "spectral_tail_fraction": 3.1156369794603123e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0225,
+          "energy_budget_error": 2.6645352591003757e-15
+        },
+        {
+          "energy": 0.49971704943471096,
+          "enstrophy": 1.1312840034104936,
+          "relative_divergence": 5.668543944693831e-18,
+          "reality_error": 1.008993508538649e-16,
+          "spectral_tail_fraction": 4.12276036385186e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.024999999999999998,
+          "energy_budget_error": 3.1086244689504383e-15
+        },
+        {
+          "energy": 0.49968876862893014,
+          "enstrophy": 1.1311804638879288,
+          "relative_divergence": 7.320133677718296e-18,
+          "reality_error": 8.069585005238637e-17,
+          "spectral_tail_fraction": 5.3665913703743915e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.027499999999999997,
+          "energy_budget_error": 3.774758283725532e-15
+        },
+        {
+          "energy": 0.49966049041127863,
+          "enstrophy": 1.1310769530241698,
+          "relative_divergence": 7.335207947531416e-18,
+          "reality_error": 9.114226651928487e-17,
+          "spectral_tail_fraction": 6.885493925799552e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.029999999999999995,
+          "energy_budget_error": 4.218847493575595e-15
+        },
+        {
+          "energy": 0.4996322147810424,
+          "enstrophy": 1.1309734706393144,
+          "relative_divergence": 6.566329978568869e-18,
+          "reality_error": 9.759884084068106e-17,
+          "spectral_tail_fraction": 8.72109753681649e-12,
+          "out_of_band_fraction": 0.0,
+          "time": 0.032499999999999994,
+          "energy_budget_error": 4.6629367034256575e-15
+        },
+        {
+          "energy": 0.4996039417375117,
+          "enstrophy": 1.1308700165538095,
+          "relative_divergence": 5.6694929947107586e-18,
+          "reality_error": 8.865542406901836e-17,
+          "spectral_tail_fraction": 1.0918202680209204e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.034999999999999996,
+          "energy_budget_error": 5.10702591327572e-15
+        },
+        {
+          "energy": 0.4995756712799813,
+          "enstrophy": 1.1307665905884485,
+          "relative_divergence": 7.332873742561574e-18,
+          "reality_error": 7.978817364051329e-17,
+          "spectral_tail_fraction": 1.3524681207739265e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0375,
+          "energy_budget_error": 5.773159728050814e-15
+        },
+        {
+          "energy": 0.4995474034077504,
+          "enstrophy": 1.1306631925643642,
+          "relative_divergence": 6.551294214546095e-18,
+          "reality_error": 8.745881348058586e-17,
+          "spectral_tail_fraction": 1.6591372016791742e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.04,
+          "energy_budget_error": 6.217248937900877e-15
+        },
+        {
+          "energy": 0.4995191381201226,
+          "enstrophy": 1.1305598223030238,
+          "relative_divergence": 7.307791288338356e-18,
+          "reality_error": 7.461828834548249e-17,
+          "spectral_tail_fraction": 2.017197225056549e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.0425,
+          "energy_budget_error": 6.661338147750939e-15
+        },
+        {
+          "energy": 0.49949087541640624,
+          "enstrophy": 1.1304564796262249,
+          "relative_divergence": 6.580765698334559e-18,
+          "reality_error": 7.953700936969745e-17,
+          "spectral_tail_fraction": 2.432292430384983e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.045000000000000005,
+          "energy_budget_error": 7.105427357601002e-15
+        },
+        {
+          "energy": 0.49946261529591396,
+          "enstrophy": 1.1303531643560891,
+          "relative_divergence": 5.711189916833178e-18,
+          "reality_error": 8.310609126822259e-17,
+          "spectral_tail_fraction": 2.9103298922195194e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.04750000000000001,
+          "energy_budget_error": 7.993605777301127e-15
+        },
+        {
+          "energy": 0.4994343577579626,
+          "enstrophy": 1.130249876315058,
+          "relative_divergence": 8.224006801522736e-19,
+          "reality_error": 8.03592921401029e-17,
+          "spectral_tail_fraction": 3.457467469351481e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05000000000000001,
+          "energy_budget_error": 8.43769498715119e-15
+        },
+        {
+          "energy": 0.4994061028018738,
+          "enstrophy": 1.1301466153258866,
+          "relative_divergence": 4.704953247681633e-18,
+          "reality_error": 7.760213047441209e-17,
+          "spectral_tail_fraction": 4.080101424187924e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.05250000000000001,
+          "energy_budget_error": 9.325873406851315e-15
+        },
+        {
+          "energy": 0.49937785042697325,
+          "enstrophy": 1.130043381211641,
+          "relative_divergence": 4.72365577744274e-18,
+          "reality_error": 6.778329316238775e-17,
+          "spectral_tail_fraction": 4.784853744345331e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.055000000000000014,
+          "energy_budget_error": 9.547918011776346e-15
+        },
+        {
+          "energy": 0.4993496006325919,
+          "enstrophy": 1.129940173795693,
+          "relative_divergence": 1.085677224381393e-18,
+          "reality_error": 8.453875843781053e-17,
+          "spectral_tail_fraction": 5.578559199411135e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.057500000000000016,
+          "energy_budget_error": 1.0658141036401503e-14
+        },
+        {
+          "energy": 0.4993213534180636,
+          "enstrophy": 1.129836992901714,
+          "relative_divergence": 6.642276352274378e-18,
+          "reality_error": 8.1849647839672e-17,
+          "spectral_tail_fraction": 6.468252166736206e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06000000000000002,
+          "energy_budget_error": 1.1102230246251565e-14
+        },
+        {
+          "energy": 0.49929310878272826,
+          "enstrophy": 1.1297338383536732,
+          "relative_divergence": 4.763321352251362e-18,
+          "reality_error": 7.603007166179019e-17,
+          "spectral_tail_fraction": 7.461153260963932e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06250000000000001,
+          "energy_budget_error": 1.199040866595169e-14
+        },
+        {
+          "energy": 0.49926486672592896,
+          "enstrophy": 1.12963070997583,
+          "relative_divergence": 5.785845731860108e-18,
+          "reality_error": 7.913540334289687e-17,
+          "spectral_tail_fraction": 8.564655802793314e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06500000000000002,
+          "energy_budget_error": 1.2434497875801753e-14
+        },
+        {
+          "energy": 0.499236627247014,
+          "enstrophy": 1.1295276075927332,
+          "relative_divergence": 6.6437582610296036e-18,
+          "reality_error": 9.225900561743923e-17,
+          "spectral_tail_fraction": 9.786312163198815e-11,
+          "out_of_band_fraction": 0.0,
+          "time": 0.06750000000000002,
+          "energy_budget_error": 1.354472090042691e-14
+        },
+        {
+          "energy": 0.4992083903453354,
+          "enstrophy": 1.1294245310292161,
+          "relative_divergence": 5.8012089715417564e-18,
+          "reality_error": 7.769424300785994e-17,
+          "spectral_tail_fraction": 1.1133820019998002e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.07000000000000002,
+          "energy_budget_error": 1.4210854715202004e-14
+        },
+        {
+          "energy": 0.49918015602025,
+          "enstrophy": 1.1293214801103897,
+          "relative_divergence": 4.835365224287982e-18,
+          "reality_error": 8.935284996217478e-17,
+          "spectral_tail_fraction": 1.261500856426164e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.07250000000000002,
+          "energy_budget_error": 1.509903313490213e-14
+        },
+        {
+          "energy": 0.49915192427111876,
+          "enstrophy": 1.1292184546616426,
+          "relative_divergence": 4.94928904786221e-18,
+          "reality_error": 7.727613493677804e-17,
+          "spectral_tail_fraction": 1.4237824694604922e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.07500000000000002,
+          "energy_budget_error": 1.5765166949677223e-14
+        },
+        {
+          "energy": 0.49912369509730725,
+          "enstrophy": 1.1291154545086355,
+          "relative_divergence": 4.899612778262551e-18,
+          "reality_error": 8.544209248925359e-17,
+          "spectral_tail_fraction": 1.6010319237875031e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.07750000000000003,
+          "energy_budget_error": 1.6431300764452317e-14
+        },
+        {
+          "energy": 0.4990954684981851,
+          "enstrophy": 1.1290124794772978,
+          "relative_divergence": 4.6903916551542394e-18,
+          "reality_error": 8.17413225541075e-17,
+          "spectral_tail_fraction": 1.7940633235168373e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08000000000000003,
+          "energy_budget_error": 1.709743457922741e-14
+        },
+        {
+          "energy": 0.4990672444731268,
+          "enstrophy": 1.1289095293938245,
+          "relative_divergence": 4.691754944402488e-18,
+          "reality_error": 8.444329925437526e-17,
+          "spectral_tail_fraction": 2.0036984332457734e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08250000000000003,
+          "energy_budget_error": 1.84297022087776e-14
+        },
+        {
+          "energy": 0.4990390230215103,
+          "enstrophy": 1.1288066040846712,
+          "relative_divergence": 8.611065496401496e-19,
+          "reality_error": 8.109823728632602e-17,
+          "spectral_tail_fraction": 2.2307653315399115e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08500000000000003,
+          "energy_budget_error": 1.9095836023552692e-14
+        },
+        {
+          "energy": 0.4990108041427187,
+          "enstrophy": 1.1287037033765537,
+          "relative_divergence": 3.466316801726636e-18,
+          "reality_error": 8.580272040833914e-17,
+          "spectral_tail_fraction": 2.476097082810728e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.08750000000000004,
+          "energy_budget_error": 1.9761969838327786e-14
+        },
+        {
+          "energy": 0.49898258783613925,
+          "enstrophy": 1.1286008270964436,
+          "relative_divergence": 3.472321324309098e-18,
+          "reality_error": 7.637674022977924e-17,
+          "spectral_tail_fraction": 2.740530431584417e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09000000000000004,
+          "energy_budget_error": 2.0872192862952943e-14
+        },
+        {
+          "energy": 0.4989543741011631,
+          "enstrophy": 1.1284979750715636,
+          "relative_divergence": 4.8998698276165315e-18,
+          "reality_error": 8.25737081996946e-17,
+          "spectral_tail_fraction": 3.0249045231653326e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09250000000000004,
+          "energy_budget_error": 2.1760371282653068e-14
+        },
+        {
+          "energy": 0.4989261629371862,
+          "enstrophy": 1.1283951471293874,
+          "relative_divergence": 5.716959909446433e-18,
+          "reality_error": 8.662237226232043e-17,
+          "spectral_tail_fraction": 3.330059654700378e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09500000000000004,
+          "energy_budget_error": 2.2648549702353193e-14
+        },
+        {
+          "energy": 0.4988979543436087,
+          "enstrophy": 1.128292343097635,
+          "relative_divergence": 5.034893621957398e-18,
+          "reality_error": 8.25142702222018e-17,
+          "spectral_tail_fraction": 3.6568360606456196e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.09750000000000004,
+          "energy_budget_error": 2.353672812205332e-14
+        },
+        {
+          "energy": 0.4988697483198348,
+          "enstrophy": 1.1281895628042722,
+          "relative_divergence": 5.0348851936186235e-18,
+          "reality_error": 7.934879311534748e-17,
+          "spectral_tail_fraction": 4.0060727366268153e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10000000000000005,
+          "energy_budget_error": 2.4424906541753444e-14
+        },
+        {
+          "energy": 0.4988415448652734,
+          "enstrophy": 1.128086806077505,
+          "relative_divergence": 2.452638547796787e-18,
+          "reality_error": 8.125428582042855e-17,
+          "spectral_tail_fraction": 4.378606305667786e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10250000000000005,
+          "energy_budget_error": 2.55351295663786e-14
+        },
+        {
+          "energy": 0.4988133439793374,
+          "enstrophy": 1.127984072745781,
+          "relative_divergence": 5.946582168379319e-18,
+          "reality_error": 7.703770625046428e-17,
+          "spectral_tail_fraction": 4.775269930736992e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10500000000000005,
+          "energy_budget_error": 2.6645352591003757e-14
+        },
+        {
+          "energy": 0.49878514566144383,
+          "enstrophy": 1.1278813626377835,
+          "relative_divergence": 6.1145711035762105e-18,
+          "reality_error": 7.236276185693424e-17,
+          "spectral_tail_fraction": 5.196892277532813e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.10750000000000005,
+          "energy_budget_error": 2.708944180085382e-14
+        },
+        {
+          "energy": 0.49875694991101494,
+          "enstrophy": 1.127778675582433,
+          "relative_divergence": 6.114862030258821e-18,
+          "reality_error": 7.351875521050395e-17,
+          "spectral_tail_fraction": 5.644296531391724e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11000000000000006,
+          "energy_budget_error": 2.886579864025407e-14
+        },
+        {
+          "energy": 0.49872875672747563,
+          "enstrophy": 1.127676011408882,
+          "relative_divergence": 4.004338213849376e-18,
+          "reality_error": 8.449713634481692e-17,
+          "spectral_tail_fraction": 6.118299472160388e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11250000000000006,
+          "energy_budget_error": 2.9531932455029164e-14
+        },
+        {
+          "energy": 0.4987005661102565,
+          "enstrophy": 1.1275733699465151,
+          "relative_divergence": 5.836644633459602e-18,
+          "reality_error": 8.768162528220209e-17,
+          "spectral_tail_fraction": 6.619710610823693e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11500000000000006,
+          "energy_budget_error": 3.064215547965432e-14
+        },
+        {
+          "energy": 0.4986723780587917,
+          "enstrophy": 1.1274707510249478,
+          "relative_divergence": 5.232319832689512e-18,
+          "reality_error": 9.171118755398868e-17,
+          "spectral_tail_fraction": 7.149331391625737e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.11750000000000006,
+          "energy_budget_error": 3.1308289294429414e-14
+        },
+        {
+          "energy": 0.49864419257252035,
+          "enstrophy": 1.127368154474023,
+          "relative_divergence": 3.564961800401577e-18,
+          "reality_error": 8.880346518698366e-17,
+          "spectral_tail_fraction": 7.707954463359511e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12000000000000006,
+          "energy_budget_error": 3.2862601528904634e-14
+        },
+        {
+          "energy": 0.4986160096508846,
+          "enstrophy": 1.1272655801238107,
+          "relative_divergence": 1.1721169239956518e-18,
+          "reality_error": 8.136407157886696e-17,
+          "spectral_tail_fraction": 8.296363023432772e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12250000000000007,
+          "energy_budget_error": 3.375077994860476e-14
+        },
+        {
+          "energy": 0.4985878292933319,
+          "enstrophy": 1.1271630278046079,
+          "relative_divergence": 3.838116660323196e-18,
+          "reality_error": 8.251664981098139e-17,
+          "spectral_tail_fraction": 8.915330238245037e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12500000000000006,
+          "energy_budget_error": 3.4638958368304884e-14
+        },
+        {
+          "energy": 0.4985596514993135,
+          "enstrophy": 1.127060497346935,
+          "relative_divergence": 2.3140859484292073e-18,
+          "reality_error": 7.889652475368905e-17,
+          "spectral_tail_fraction": 9.565618743331318e-10,
+          "out_of_band_fraction": 0.0,
+          "time": 0.12750000000000006,
+          "energy_budget_error": 3.574918139293004e-14
+        },
+        {
+          "energy": 0.4985314762682853,
+          "enstrophy": 1.1269579885815362,
+          "relative_divergence": 4.476477633930387e-18,
+          "reality_error": 7.487125219825832e-17,
+          "spectral_tail_fraction": 1.0247980226642823e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13000000000000006,
+          "energy_budget_error": 3.708144902248023e-14
+        },
+        {
+          "energy": 0.4985033035997068,
+          "enstrophy": 1.1268555013393788,
+          "relative_divergence": 2.5950401956190566e-18,
+          "reality_error": 7.913803626566824e-17,
+          "spectral_tail_fraction": 1.0963155098244372e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13250000000000006,
+          "energy_budget_error": 3.8191672047105385e-14
+        },
+        {
+          "energy": 0.4984751334930419,
+          "enstrophy": 1.1267530354516526,
+          "relative_divergence": 3.0640500812398395e-18,
+          "reality_error": 7.757287314964511e-17,
+          "spectral_tail_fraction": 1.1711872249612757e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13500000000000006,
+          "energy_budget_error": 3.930189507173054e-14
+        },
+        {
+          "energy": 0.4984469659477592,
+          "enstrophy": 1.1266505907497677,
+          "relative_divergence": 4.6964184735769354e-18,
+          "reality_error": 8.052160539305374e-17,
+          "spectral_tail_fraction": 1.2494848905618037e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.13750000000000007,
+          "energy_budget_error": 4.063416270128073e-14
+        },
+        {
+          "energy": 0.49841880096333097,
+          "enstrophy": 1.1265481670653557,
+          "relative_divergence": 3.063282540502188e-18,
+          "reality_error": 7.39443171103543e-17,
+          "spectral_tail_fraction": 1.3312790572163465e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14000000000000007,
+          "energy_budget_error": 4.196643033083092e-14
+        },
+        {
+          "energy": 0.4983906385392338,
+          "enstrophy": 1.126445764230269,
+          "relative_divergence": 5.23603909948546e-18,
+          "reality_error": 8.103220272937882e-17,
+          "spectral_tail_fraction": 1.4166391082348234e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14250000000000007,
+          "energy_budget_error": 4.3076653355456074e-14
+        },
+        {
+          "energy": 0.49836247867494865,
+          "enstrophy": 1.1263433820765798,
+          "relative_divergence": 4.769534288495632e-18,
+          "reality_error": 8.888493945033754e-17,
+          "spectral_tail_fraction": 1.5056332743899588e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14500000000000007,
+          "energy_budget_error": 4.418687638008123e-14
+        },
+        {
+          "energy": 0.49833432136996064,
+          "enstrophy": 1.1262410204365816,
+          "relative_divergence": 5.782609324368284e-18,
+          "reality_error": 8.502159575517562e-17,
+          "spectral_tail_fraction": 1.5983286590500677e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.14750000000000008,
+          "energy_budget_error": 4.551914400963142e-14
+        },
+        {
+          "energy": 0.49830616662375904,
+          "enstrophy": 1.1261386791427868,
+          "relative_divergence": 4.556285706152908e-18,
+          "reality_error": 9.008626749335694e-17,
+          "spectral_tail_fraction": 1.694791273951342e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15000000000000008,
+          "energy_budget_error": 4.707345624410664e-14
+        },
+        {
+          "energy": 0.49827801443583697,
+          "enstrophy": 1.12603635802793,
+          "relative_divergence": 3.2759263588162648e-18,
+          "reality_error": 7.937210729822866e-17,
+          "spectral_tail_fraction": 1.7950860858464805e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15250000000000008,
+          "energy_budget_error": 4.796163466380676e-14
+        },
+        {
+          "energy": 0.49824986480569244,
+          "enstrophy": 1.125934056924965,
+          "relative_divergence": 4.329891055590245e-18,
+          "reality_error": 8.295604826143566e-17,
+          "spectral_tail_fraction": 1.899277074253153e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15500000000000008,
+          "energy_budget_error": 4.929390229335695e-14
+        },
+        {
+          "energy": 0.49822171773282703,
+          "enstrophy": 1.125831775667068,
+          "relative_divergence": 3.374726884882944e-18,
+          "reality_error": 7.954927207311078e-17,
+          "spectral_tail_fraction": 2.0074273005117116e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.15750000000000008,
+          "energy_budget_error": 5.062616992290714e-14
+        },
+        {
+          "energy": 0.49819357321674695,
+          "enstrophy": 1.1257295140876369,
+          "relative_divergence": 4.091737390013729e-18,
+          "reality_error": 7.632302687058176e-17,
+          "spectral_tail_fraction": 2.1195989883474295e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1600000000000001,
+          "energy_budget_error": 5.240252676230739e-14
+        },
+        {
+          "energy": 0.49816543125696183,
+          "enstrophy": 1.1256272720202907,
+          "relative_divergence": 4.700937023628039e-18,
+          "reality_error": 8.496598679590204e-17,
+          "spectral_tail_fraction": 2.235853616117761e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1625000000000001,
+          "energy_budget_error": 5.3512749786932545e-14
+        },
+        {
+          "energy": 0.4981372918529863,
+          "enstrophy": 1.125525049298874,
+          "relative_divergence": 3.273324945493475e-18,
+          "reality_error": 7.711925673294001e-17,
+          "spectral_tail_fraction": 2.3562520209101074e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1650000000000001,
+          "energy_budget_error": 5.46229728115577e-14
+        },
+        {
+          "energy": 0.4981091550043387,
+          "enstrophy": 1.1254228457574544,
+          "relative_divergence": 2.3202574899434273e-18,
+          "reality_error": 8.144815912404612e-17,
+          "spectral_tail_fraction": 2.480854514640343e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1675000000000001,
+          "energy_budget_error": 5.595524044110789e-14
+        },
+        {
+          "energy": 0.4980810207105416,
+          "enstrophy": 1.1253206612303255,
+          "relative_divergence": 4.4804652230648164e-18,
+          "reality_error": 8.689436337263862e-17,
+          "spectral_tail_fraction": 2.6097210122863827e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1700000000000001,
+          "energy_budget_error": 5.728750807065808e-14
+        },
+        {
+          "energy": 0.498052888971122,
+          "enstrophy": 1.1252184955520064,
+          "relative_divergence": 5.784212826708853e-18,
+          "reality_error": 8.035901436912816e-17,
+          "spectral_tail_fraction": 2.742911172375448e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1725000000000001,
+          "energy_budget_error": 5.906386491005833e-14
+        },
+        {
+          "energy": 0.4980247597856102,
+          "enstrophy": 1.1251163485572457,
+          "relative_divergence": 3.0631207027975172e-18,
+          "reality_error": 7.312760178617779e-17,
+          "spectral_tail_fraction": 2.8804845498271856e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1750000000000001,
+          "energy_budget_error": 6.017408793468348e-14
+        },
+        {
+          "energy": 0.49799663315354165,
+          "enstrophy": 1.1250142200810198,
+          "relative_divergence": 3.4042261980335763e-18,
+          "reality_error": 7.754732864768009e-17,
+          "spectral_tail_fraction": 3.0225007612382823e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1775000000000001,
+          "energy_budget_error": 6.195044477408373e-14
+        },
+        {
+          "energy": 0.497968509074455,
+          "enstrophy": 1.1249121099585369,
+          "relative_divergence": 3.7234814166812554e-18,
+          "reality_error": 7.69847229945889e-17,
+          "spectral_tail_fraction": 3.1690196626777156e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1800000000000001,
+          "energy_budget_error": 6.306066779870889e-14
+        },
+        {
+          "energy": 0.49794038754789394,
+          "enstrophy": 1.1248100180252385,
+          "relative_divergence": 1.755013669878829e-18,
+          "reality_error": 7.277940483893784e-17,
+          "spectral_tail_fraction": 3.3201015400444762e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1825000000000001,
+          "energy_budget_error": 6.461498003318411e-14
+        },
+        {
+          "energy": 0.4979122685734054,
+          "enstrophy": 1.1247079441167982,
+          "relative_divergence": 3.303858576870932e-18,
+          "reality_error": 8.412872770934128e-17,
+          "spectral_tail_fraction": 3.475807312022719e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1850000000000001,
+          "energy_budget_error": 6.616929226765933e-14
+        },
+        {
+          "energy": 0.49788415215054105,
+          "enstrophy": 1.1246058880691292,
+          "relative_divergence": 3.40782124391965e-18,
+          "reality_error": 8.310014160542377e-17,
+          "spectral_tail_fraction": 3.636198745651818e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1875000000000001,
+          "energy_budget_error": 6.750155989720952e-14
+        },
+        {
+          "energy": 0.4978560382788565,
+          "enstrophy": 1.1245038497183804,
+          "relative_divergence": 5.265582028538799e-18,
+          "reality_error": 8.050797355247841e-17,
+          "spectral_tail_fraction": 3.801338684511424e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.1900000000000001,
+          "energy_budget_error": 6.927791673660977e-14
+        },
+        {
+          "energy": 0.49782792695791106,
+          "enstrophy": 1.1244018289009425,
+          "relative_divergence": 2.536480418650256e-18,
+          "reality_error": 7.468178015380027e-17,
+          "spectral_tail_fraction": 3.97129128950395e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.19250000000000012,
+          "energy_budget_error": 7.083222897108499e-14
+        },
+        {
+          "energy": 0.4977998181872686,
+          "enstrophy": 1.124299825453449,
+          "relative_divergence": 2.509436192070203e-18,
+          "reality_error": 8.187922358119815e-17,
+          "spectral_tail_fraction": 4.146122292199275e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.19500000000000012,
+          "energy_budget_error": 7.238654120556021e-14
+        },
+        {
+          "energy": 0.4977717119664969,
+          "enstrophy": 1.1241978392127792,
+          "relative_divergence": 5.1766877103972726e-18,
+          "reality_error": 8.248240170958673e-17,
+          "spectral_tail_fraction": 4.325899260688618e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.19750000000000012,
+          "energy_budget_error": 7.394085344003543e-14
+        },
+        {
+          "energy": 0.49774360829516784,
+          "enstrophy": 1.1240958700160593,
+          "relative_divergence": 4.654920550795269e-18,
+          "reality_error": 7.84619594130351e-17,
+          "spectral_tail_fraction": 4.5106918778766575e-09,
+          "out_of_band_fraction": 0.0,
+          "time": 0.2,
+          "energy_budget_error": 7.549516567451064e-14
+        }
+      ]
+    }
+  ],
+  "refinement_passed": true,
+  "relative_field_differences": {
+    "n24_vs_n32": 6.992995131516232e-05,
+    "n32_vs_n48": 1.7863355515233546e-06,
+    "dt005_vs_dt0025_at_n32": 2.970113959444311e-10
+  },
+  "relative_vorticity_differences": {
+    "n24_vs_n32": 0.00038635898397791705,
+    "n32_vs_n48": 1.3871447792910499e-05,
+    "dt005_vs_dt0025_at_n32": 1.2887188342881471e-09
+  },
+  "baseline_fine": {
+    "status": "completed",
+    "reason": null,
+    "final_time": 0.2,
+    "steps": 56,
+    "max_actual_dt": 0.003588001910143912,
+    "initial_energy": 0.5,
+    "final_energy": 0.49771512820493813,
+    "initial_enstrophy": 1.1467545393513598,
+    "final_enstrophy": 1.138145416052099,
+    "enstrophy_ratio": 0.9924926189486631,
+    "max_energy_budget_error": 3.6926017799032707e-13,
+    "max_relative_divergence": 7.728348952537438e-18,
+    "max_reality_error": 1.4064308830821666e-16,
+    "max_spectral_tail_fraction": 6.130460878086006e-13
+  },
+  "fine_objective_improvement": 0.00024341209921918683,
+  "interpretation": "These numerical gates assess this finite calculation only. They neither prove regularity nor establish singularity formation."
+}
